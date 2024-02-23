@@ -1,0 +1,76 @@
+
+.navbar {
+    background-color: rgb(7, 184, 238) !important;
+    z-index: 1000; 
+}
+.navbar-nav .nav-item .nav-link {
+    border-top: 0.5px solid #060606; /* Línea arriba de cada enlace */
+    border-bottom: 0.5px solid #060606; /* Línea abajo de cada enlace */
+    padding: 10px; /* Ajusta el espacio alrededor del enlace */
+}
+.navbar-nav .nav-item:first-child .nav-link {
+    border-top: none; /* Elimina la línea superior del primer enlace */
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    border-bottom: none; /* Elimina la línea inferior del último enlace */
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    transition: color 0.3s, font-size 0.3s; /* Transición de color y tamaño de fuente */
+}
+.navbar-nav .nav-item:hover {
+    background-color: #0665f4; /* Cambiar el color de fondo al pasar el cursor */
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    color: #010301; /* Cambio de color al pasar el cursor o hacer clic */
+    font-size: 1.1em; /* Aumento de tamaño de fuente al pasar el cursor o hacer clic */
+}
+header {
+    background-color: #20b4ea;
+    transition: all 0.3s ease;
+    border-radius: 0 0 20px 20px;
+    /* overflow: hidden;   */
+
+ 
+    
+}
+
+
+
+.header-minimized {
+    height: 50px; /* Altura mínima de la cabecera minimizada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    /* Ajusta el margen superior para evitar que el contenido principal se solape con la cabecera minimizada */
+    margin-top: 60px; /* Ajusta según sea necesario */
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex;
+}
+
+.social-icons li {
+    margin-right: 20px; /* Ajusta el espaciado entre los íconos */
+}
+
+a {
+    text-decoration: none ; /* Quita la línea subrayada */
+    color: black;
+    /* font-weight: bold; */
+}
+
+ul {
+    list-style: none; /* Quita los puntos */
+}
+.dropdown-menu {
+    z-index: 1000; /* Asegura que los menús desplegables estén por encima de otros elementos */
+}

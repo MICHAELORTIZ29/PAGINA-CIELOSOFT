@@ -1,0 +1,64 @@
+#facturacion-electronica {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 50px; /* Espacio superior */
+}
+
+#facturacion-electronica h2 {
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color negro */
+}
+
+#facturacion-electronica p {
+    color: black; /* Color negro */
+}
+
+.buttons {
+    margin-top: 20px; /* Espacio superior */
+}
+
+.buttons .btn {
+    margin-right: 10px; /* Espacio entre los botones */
+    border: 2px solid #007bff; /* Borde del botón celeste */
+    color: #007bff; /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.buttons .btn:hover {
+    background-color: #007bff; /* Fondo celeste */
+    color: white; /* Texto blanco */
+}
+
+
+
+
+#facturacion-electronica h2 span {
+    color: #007bff; /* Color celeste */
+}
+
+.buttons .btn:nth-child(2) {
+    background-color: #007bff; /* Color celeste */
+    border-color: #007bff; /* Color celeste para el borde */
+    color: white; /* Color de texto blanco */
+}
+
+.buttons .btn:nth-child(2):hover {
+    background-color: #0056b3; /* Cambio de color al pasar el cursor */
+    border-color: #0056b3; /* Cambio de color del borde al pasar el cursor */
+}
+
+@keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  #facturacion-electronica {
+    animation: slideIn 3s ease-out; /* Duración de 1 segundo con aceleración suave */
+  }
+  

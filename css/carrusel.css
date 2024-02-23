@@ -1,0 +1,57 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  } */
+
+  /* #carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    
+  } */
+
+  #carousel-container {
+    overflow: hidden;
+    max-width: 95%; /* Establece un ancho máximo para el carrusel */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+    position: relative;
+    z-index: 1;
+}
+
+  #carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+   
+  }
+
+  img {
+    width: 100%; /* Asegura que la imagen se adapte al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+   
+  }
+  #prevBtn, #nextBtn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+
+  #prevBtn {
+    left: 10px;
+
+  }
+
+  #nextBtn {
+    right: 10px;
+ 
+  }

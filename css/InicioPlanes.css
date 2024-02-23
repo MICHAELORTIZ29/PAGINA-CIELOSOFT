@@ -1,0 +1,20 @@
+.plan-container {
+    background-color: #e0e0e0; /* Color gris */
+    border-radius: 10px; /* Borde con esquinas redondeadas */
+    padding: 10px; /* Espacio interno reducido */
+    margin-bottom: 20px; /* Margen inferior */
+}
+@keyframes slide-in-from-left {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.plan-container {
+  animation: slide-in-from-left 4s ease-out forwards; /* Aplicar la animación */
+}

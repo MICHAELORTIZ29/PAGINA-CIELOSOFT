@@ -1,0 +1,36 @@
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    width: 50px; /* Ancho del contenedor */
+    height: 50px; /* Altura del contenedor */
+    background-color: rgb(8, 168, 8); /* Color del círculo */
+    border-radius: 50%; /* Hace que el contenedor sea un círculo perfecto */
+    text-align: center;
+    line-height: 48px; /* Centra el ícono verticalmente */
+    margin-left: 5px; /* Espacio entre el botón y el texto */
+}
+
+.whatsapp-text {
+    font-size: 12px; /* Tamaño del texto más pequeño */
+    color: black; /* Color del texto */
+}
+.whatsapp-button i {
+    color: white; /* Color blanco para el icono */
+    transition: transform 0.3s ease; /* Animación de transformación */
+}
+
+
+.whatsapp-button:hover i {
+    transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor */
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor */
+}

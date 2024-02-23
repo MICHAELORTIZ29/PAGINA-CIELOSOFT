@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+
+<div>
+    <h1>clientes</h1>
+</div>
+    <div class="slider-clientes">
+        <div class="slide-track-client">
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+            </div>
+            <div class=slide-client>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+            </div>
+        </div>
+    </div>
+    <script>
+const slideTrack = document.querySelector('.slide-track-client');
+const slides = document.querySelectorAll('.slide-client');
+
+function setupCarouselClient() {
+    // Elimina los clones existentes
+    slideTrack.querySelectorAll('.clone').forEach(clone => clone.remove());
+
+    // Clona los primeros slides y añádelos al final para crear el efecto infinito
+    slides.forEach(slide => {
+        const cloneSlide = slide.cloneNode(true);
+        cloneSlide.classList.add('clone');
+        slideTrack.appendChild(cloneSlide);
+    });
+
+    // Define el ancho de cada slide
+    const slideWidth = slides[0].offsetWidth;
+
+    // Define la posición inicial
+    let position = 0;
+
+    // Función para animar el carrusel
+    function animateCarouselClient() {
+        position -= slideWidth;
+        slideTrack.style.transition = 'transform 0.5s ease'; // Agrega una transición suave
+        slideTrack.style.transform = `translateX(${position}px)`;
+
+        // Verifica si ha llegado al final del carrusel y reinicia la posición
+        if (position <= -slideWidth * slides.length) {
+            position = 0;
+            setTimeout(() => {
+                slideTrack.style.transition = 'none'; // Elimina la transición para que el cambio sea instantáneo
+                slideTrack.style.transform = `translateX(${position}px)`;
+            }, 500); // Espera 500ms antes de eliminar la transición
+        }
+
+        // Repite la animación
+        setTimeout(animateCarouselClient, 2000); // Cambia 2000 por el intervalo deseado entre cada desplazamiento
+    }
+
+    // Inicia la animación del carrusel
+    animateCarouselClient();
+}
+
+// Llama a la función setupCarousel() para configurar el carrusel inicialmente
+setupCarouselClient();
+
+// Actualiza el carrusel cuando cambia el tamaño de la ventana
+window.addEventListener('resize', setupCarousel);
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+.blue-section {
+    background-color: #3a4a5a; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    padding: 10px 0; /* Ajusta el espacio interno */
+}
+
+.text {
+    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.yellow-text {
+    color: #ffc107; /* Color amarillo */
+}
+
+.white-text {
+    color: #fff; /* Color blanco */
+}
+
+.image img {
+    max-width: 100%; /* Para que la imagen no desborde del contenedor */
+    width: 60%; /* Reducir el ancho de la imagen */
+    display: block; /* Para centrar la imagen */
+    margin: 0 auto; /* Para centrar la imagen */
+}
+
+.btn {
+    display: block; /* Hacer que el botón sea un bloque */
+    margin: 0 auto; /* Centrar el botón horizontalmente */
+}

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIELOSOFT PUCALLPA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/carrusel.css">
+    <link rel="stylesheet" href="/css/btnWhatsappFlotante.css">
+    <link rel="stylesheet" href="/css/primeranuncio.css">
+    <link rel="stylesheet" href="/css/Inicio-equipos.css">
+    <link rel="stylesheet" href="/css/InicioPlanes.css">
+    <link rel="stylesheet" href="/css/InicioModulos.css">
+    <link rel="stylesheet" href="/css/InicioVentajas.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/InicioTurial.css">
+    <link rel="stylesheet" href="/css/Inicio3textos.css">
+    <link rel="stylesheet" href="/css/InicioCarruselInfinito-clientes.css">
+</head>
+
+<body>
+
+    <header style="margin-bottom: 15px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/images/logo3.4.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="inicioDropdown">
+                                Inicio
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="nosotros.html" id="nosotrosDropdown">
+                                Nosotros
+                            </a>
+                           
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="puntodeventaDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Punto de Ventas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="puntodeventaDropdown">
+                                <li><a class="dropdown-item" href="#">Impresoras</a></li>
+                                <li><a class="dropdown-item" href="#">Gavetas</a></li>
+                                <li><a class="dropdown-item" href="#">Lector de barras</a></li>
+                                <li><a class="dropdown-item" href="#">Contometros</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="planesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Planes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="planesDropdown">
+                                <li><a class="dropdown-item" href="#">Mensual</a></li>
+                                <li><a class="dropdown-item" href="#">Anual</a></li>
+                                <li><a class="dropdown-item" href="#">Local</a></li>
+                                <li><a class="dropdown-item" href="#">Codigo fuente</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="utiliariosDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                utiliarios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="utiliariosDropdown">
+                                <li><a class="dropdown-item" href="#">Tutoriales</a></li>
+                                <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                                <li><a class="dropdown-item" href="#">Validacion CPE</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#">
+                                Contactenos
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div id="carousel-container" style="margin-top: 15px;">
+        <div id="carousel">
+          <div class="slide"><img src="/images/imgslider1.jpg" alt="Imagen 1"></div>
+          <div class="slide"><img src="/images/imgslider2.jpg" alt="Imagen 2"></div>
+          <div class="slide"><img src="/images/imgslider3.jpg" alt="Imagen 3"></div>
+          <!-- Agrega más slides según sea necesario -->
+        </div>
+        <button id="prevBtn" onclick="prevSlide()">&#10094;</button>
+        <button id="nextBtn" onclick="nextSlide()">&#10095;</button>
+      </div>
+
+      <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle text-success"></i>
+                        <p>Emite tus facturas y boletas FÁCIL Y RÁPIDO</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle text-success"></i>
+                        <p>Controla el stock de tus productos</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle text-success"></i>
+                        <p>Gestiona y controla tus puntos de venta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+      <section id="facturacion-electronica" data-aos="fade-up">
+        <div class="container">
+            <h2>Facturación electrónica para <span>emprendedores</span></h2>
+            <p>Miles de negocios en todo el Perú 🇵🇪 confían en nosotros</p>
+            
+            <div class="buttons" data-aos="fade-up">
+                <button class="btn">Contacta a ventas</button>
+                <button class="btn">Prueba el demo</button>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="planes" class="text-center mt-5" data-aos="fade-up">
+        <div class="container">
+            <h2 style="font-size: 36px; font-weight: bold;">Planes que te ayudan a crecer</h2>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="plan-container" data-aos="fade-up">
+                        <h3>MENSUALES</h3>
+                        <p>Comprobantes ilimitados</p>
+                        <p>desde<span style="font-weight: bold; font-size: 30px;"> S/. 29.90 mensual</span></p>
+                        <p>* Incluye IGV</p>
+                        <p>Para empresas creadas hace menos de un año.</p>
+                        
+                        <button class="btn btn-primary mt-3">Más información</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="plan-container" data-aos="fade-up">
+                        <h3>ANUALES</h3>
+                        <p>Comprobantes ilimitados</p>
+                        <p>desde <span style="font-weight: bold; font-size: 30px;">S/. 300 mensual</span></p>
+                        <p>* Incluye IGV</p>
+                        <p>Para empresas con más de un año de creación.</p>
+                        
+                        <button class="btn btn-primary mt-3">Más información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    
+    
+    
+
+    <section id="mejores-equipos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                    <h2 style="font-weight: bold; font-size: 32px;">Los mejores equipos para Facturación Electrónica</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center" data-aos="fade-right">
+                    <img src="/images/impresora1.1.png" alt="Imagen" class="img-fluid">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="descripcion-contenedor p-4">
+                        <p style="font-weight: bold; font-size: 24px;" class="mb-4">Ofrecemos los mejores equipos para Facturación Electrónica</p>
+                        <p class="mb-4">Aquí encontrarás las mejores ticketeras térmicas, pantallas táctiles y todo lo que necesitas para manejar tu negocio.</p>
+                        <button class="btn btn-info">Más información</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="iconos" class="text-center mt-5">
+        <div class="container">
+            <h2 style="font-size: 36px; font-weight: bold;">Complementos de FACTURACIÓN ELECTRÓNICA</h2>
+            <div class="row text-center justify-content-center"> <!-- Añadido justify-content-center -->
+                <!-- Primer conjunto de iconos -->
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Farmacia</p>
+                        <div class="description">Descripción corta para Farmacia</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Ferretería</p>
+                        <div class="description">Descripción corta para Farmacia</div>
+                    </div>
+                </div>
+                <!-- Repite este bloque para cada icono -->
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">hotel</p>
+                        <div class="description">Descripción corta para Droguería</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Restaurant</p>
+                        <div class="description">Descripción corta para Droguería</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Venta POS</p>
+                        <div class="description">Descripción corta para Droguería</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Optica</p>
+                        <div class="description">Descripción corta para Droguería</div>
+                    </div>
+                </div>
+                <!-- Termina el primer conjunto de iconos -->
+    
+                <!-- Segundo conjunto de iconos -->
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Zapateria/p>
+                        <div class="description">Descripción corta para Óptica</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Ceramicos</p>
+                        <div class="description">Descripción corta para Óptica</div>
+                    </div>
+                </div>
+                <!-- Repite este bloque para cada icono -->
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Acumulacion de puntos</p>
+                        <div class="description">Descripción corta para Ferretería</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">transporte</p>
+                        <div class="description">Descripción corta para Ferretería</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Drogueria</p>
+                        <div class="description">Descripción corta para Ferretería</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-6 mb-3">
+                    <div class="icon-container bg-light p-3 text-center">
+                        <i class="bi bi-graph-up"></i>
+                        <p class="mt-2">Resportes detallistas</p>
+                        <div class="description">Descripción corta para Ferretería</div>
+                    </div>
+                </div>
+                <!-- Termina el segundo conjunto de iconos -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="ventajas" class="text-center mt-5">
+        <div class="container">
+            <h2 style="font-size: 36px; font-weight: bold;">Ventajas de contratar directamente con nosotros:</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="descripcion text-left">
+                        <p>
+                            En Factura Perú, somos los creadores y actualizadores constantes de nuestro sistema Facturador Smart. Contratar directamente con nosotros significa que estás obteniendo el mejor soporte y la versión más actualizada del sistema. Además, somos una empresa legalmente constituida y con años de experiencia en la industria de la facturación electrónica, lo que significa que puedes confiar en nosotros para brindarte soluciones confiables y efectivas.
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-globe"></i> <span class="mr-2">Facturación desde Navegadores</span>
+                        <i class="bi bi-phone"></i> <span>Facturación desde celulares</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="position-relative d-none d-md-block">
+                        <img src="/images/imgventaja2.avif" alt="Imagen de ejemplo" class="img-fluid rounded">
+                        <div class="green-box position-absolute" style="bottom: 10px; left: 10px; width: 200px;">
+                            <p class="text-white mb-0"><strong>Trabaja donde te encuentres</strong></p>
+                            <p class="text-white">Con nuestra versión Nube tendrás acceso total a tu información las 24 horas, los 7 días de la semana.</p>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="bi bi-briefcase-fill text-white mr-2" style="font-size: 24px;"></i> <!-- Ícono de maletín -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    
+    
+    
+
+    <main>
+        <section id="inicioTutoriales" class="mt-5 text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <h2 style="font-size: 24px; font-weight: bold; text-align: left;">Cielosoft cuenta con una serie de tutoriales</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <div class="inicioVideo-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/g4H8M49UMps?si=y00umKH04LF-Dvbi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6 offset-md-3">
+                        <a href="#" class="btn btn-success btn-lg">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2 style="font-size: 30px; font-weight: bold; text-align: left; margin-top: 20px;">Clientes que confían en nosotros</h2>
+            </div>
+        </div>
+        
+            <div class="slider-clientes">
+                <div class="slide-track-client">
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
+                    </div>
+                    <div class=slide-client>
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
+                    </div>
+                </div>
+            </div>
+
+        
+
+        
+        
+       
+    </main>
+    <footer class="footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/images/logo3.2.png" alt="Logo de la empresa" style="width: 150px;">
+                    <p>Somos una empresa legalmente constituida con RUC: 10459294771 siempre buscando traerte el mejor servicio</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Enlaces</h5>
+                    <ul>
+                        <li><a href="nosotros.html" class="animated-link">Nosotros</a></li>
+                        <li><a href="#" class="animated-link">Cuenta Demo</a></li>
+                        <li><a href="" class="animated-link">Tutoriales</a></li>
+                        <li><a href="" class="animated-link">Equipos</a></li>
+                        <li><a href="#" class="animated-link">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,%20Estoy%20interesada%20más%20información%20por%20favor.!" target="_blank"><i class="fab fa-whatsapp"></i> Ventas </a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i> Soporte</a></li>
+                        <li><a href="mailto:cielosoft@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i> Cielosoft@gmail.com</a></li>
+                    </ul>
+                    <!-- Agregamos los iconos de redes sociales debajo del correo -->
+                    <ul class="footer-social-icons mt-1" style="margin-left: 30px;">
+                        <li><a href="https://www.facebook.com/CIELOSOFTPUCALLPA"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <!-- Agrega más iconos según sea necesario -->
+                    </ul>
+                </div>
+                
+                <div class="col-md-3">
+                    <h5>Distribuidor autorizado de: </h5>
+                    <ul>
+                        <li><img src="/images/imgsunat.png" alt="Distribuidor 1" style="width: 150px;"></li>
+                        <li><img src="/images/imgnubefat.png" alt="Distribuidor 2" style="width: 150px;"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright 2024 © Cielosoft Peru S.A.C </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div class="whatsapp-container">
+        <div class="whatsapp-text">¿Necesita ayuda?</div>
+        <a href="https://api.whatsapp.com/send?phone=917374145&text=Hola,%20Necesito%20ayuda.!" class="whatsapp-button" target="_blank">
+            <i class="bi bi-whatsapp" style="font-size: 40px;"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <script src="/js/script.js"></script>
+    <script src="/js/carrusel1.js"></script>
+    <script src="/js/carrusel-inifnito-clientes.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        
+        AOS.init({
+            once: true, // Para que la animación se ejecute solo una vez
+            offset: 100,
+        });
+    </script>
+</body>
+
+</html>

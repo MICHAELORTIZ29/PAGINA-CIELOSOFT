@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="slider-container">
+        <button class="slider-button prev" id="prevButton">&lt;</button>
+        <div class="slider" id="slider">
+            <div class="slider-track" id="slider-track">
+                <img src="https://picsum.photos/id/100/700/500" class="slider-image" alt="1">
+                <img src="https://picsum.photos/id/154/700/500" class="slider-image" alt="1">
+                <img src="https://picsum.photos/id/173/700/500" class="slider-image" alt="1">
+                <img src="https://picsum.photos/id/38/700/500" class="slider-image" alt="1">
+                <img src="https://picsum.photos/id/44/700/500" class="slider-image" alt="1">
+                <img src="https://picsum.photos/id/49/700/500" class="slider-image" alt="1">
+                <img src="https://picsum.photos/id/66/700/500" class="slider-image" alt="1">
+            </div>
+        </div>
+        <button class="slider-button next" id="nextButton">&gt;</button>
+    </main>
+    
+    <script>
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+        let currentSlide = 0;
+
+        const slider = document.getElementById('slider');
+        const sliderTrack = document.getElementById('slider-track');
+        const slides = document.querySelectorAll('.slider-image');
+        const sliderWidth = slides[0].clientWidth;
+
+        document.getElementById('nextButton').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSliderPosition();
+        });
+
+        document.getElementById('prevButton').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            updateSliderPosition();
+        });
+
+        slider.addEventListener('mousedown', startDragging);
+        slider.addEventListener('touchstart', startDragging);
+        slider.addEventListener('mouseup', stopDragging);
+        slider.addEventListener('touchend', stopDragging);
+        slider.addEventListener('mousemove', drag);
+        slider.addEventListener('touchmove', drag);
+
+        function startDragging(e) {
+            if (e.button !== 0) return; // Solo inicia el arrastre si se hizo clic con el botón izquierdo del mouse
+            isDragging = true;
+            startPosition = e.clientX || e.touches[0].clientX;
+            slider.classList.add('active');
+            sliderTrack.style.transition = 'none';
+        }
+
+        function stopDragging() {
+            isDragging = false;
+            slider.classList.remove('active');
+            sliderTrack.style.transition = '';
+            const delta = startPosition - (isDragging ? (e.clientX || e.touches[0].clientX) : startPosition);
+            currentTranslate += delta;
+            updateSliderPosition();
+        }
+
+        function drag(e) {
+            if (isDragging === true) {
+                const currentPosition = e.clientX || e.touches[0].clientX;
+                const difference = currentPosition - startPosition;
+                const delta = startPosition - currentPosition;
+                currentTranslate -= delta;
+                sliderTrack.style.transform = `translateX(${currentTranslate}px)`;
+            }
+        }
+
+        function updateSliderPosition() {
+            const newPosition = -currentSlide * sliderWidth;
+            sliderTrack.style.transform = `translateX(${newPosition}px)`;
+        }
+    </script>
+</body>
+</html>

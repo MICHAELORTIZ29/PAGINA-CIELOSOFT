@@ -1,0 +1,22 @@
+.features-section {
+    background-color: #f9f9f9;
+    padding: 5px 0;
+}
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px; /* Ajusta el padding según tus necesidades */
+    border-radius: 20px; /* Bordes ovalados */
+    background-color: #ffffff; /* Color de fondo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.feature-item i {
+    font-size: 24px;
+    color: #28a745;
+    margin-right: 10px;
+}
+.feature-item p {
+    font-size: 16px;
+    margin: 0;
+}

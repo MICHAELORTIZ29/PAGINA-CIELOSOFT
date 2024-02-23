@@ -1,0 +1,54 @@
+.footer-bg {
+    margin-top: 20px; /* Ajusta el valor según la separación deseada */
+    background-color: #9aa3ab; /* Color de fondo celeste oscuro */
+    color: #ffffff; /* Color de texto blanco */
+    padding: 20px 0; /* Añade espacio interno al footer */
+    border-radius: 20px; /* Hace que las esquinas sean redondeadas */
+    overflow: hidden; /* Asegura que el contenido no sobresalga de las esquinas redondeadas */
+   
+}
+
+.footer-social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-social-icons li {
+    margin-right: 10px; /* Ajusta el espaciado entre los iconos */
+}
+
+.footer-social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #137ff4; /* Color de fondo del círculo */
+    color: white;
+    transition: background-color 0.3s; /* Transición para el cambio de color */
+}
+
+.footer-social-icons a:hover {
+    background-color: #1c87fa; /* Cambia el color al pasar el cursor */
+}
+.footer-links a {
+    color: white; /* Color de texto blanco por defecto */
+    transition: color 0.3s; /* Transición para el cambio de color */
+}
+
+.footer-links a:hover {
+    color: #ffc107; /* Cambia el color al pasar el cursor */
+}
+
+/* Agrega los estilos a los enlaces dentro del footer */
+.footer-bg ul li a {
+    color: rgb(13, 13, 13); /* Color de texto blanco por defecto */
+    transition: color 0.3s; /* Transición para el cambio de color */
+}
+
+.footer-bg ul li a:hover,
+.footer-bg ul li a:focus {
+    color: #dfe0f6; /* Cambia el color al pasar el cursor o hacer clic */
+}

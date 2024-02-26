@@ -1,0 +1,48 @@
+/* Estilos para el acordeón */
+
+.card-header {
+    background-color: rgb(122, 188, 249) !important;
+}
+#accordion {
+    margin-top: 20px;
+}
+
+.card-header {
+    background-color: #f8f9fa; /* Color de fondo del encabezado */
+}
+
+.card-header h4 {
+    margin-bottom: 0; /* Elimina el margen inferior del título del encabezado */
+}
+
+.card-body {
+    background-color: #fff; /* Color de fondo del cuerpo */
+}
+
+.card-body p {
+    margin-bottom: 0; /* Elimina el margen inferior del párrafo dentro del cuerpo */
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+    .card-header {
+        text-align: left; /* Alinea el texto del encabezado a la izquierda en dispositivos móviles */
+    }
+
+    .card-body {
+        padding-left: 15px; /* Agrega un poco de espacio a la izquierda en el cuerpo en dispositivos móviles */
+        padding-right: 15px; /* Agrega un poco de espacio a la derecha en el cuerpo en dispositivos móviles */
+    }
+}
+
+/* Estilos para botones del acordeón */
+.btn-link {
+    text-align: left; /* Alinea el texto del botón a la izquierda */
+    width: 100%; /* Ancho completo del botón */
+    color: #000; /* Color del texto del botón */
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #007bff; /* Cambia el color del texto del botón al pasar el cursor o al hacer clic */
+}

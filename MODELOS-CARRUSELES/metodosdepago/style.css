@@ -14,7 +14,7 @@ body{
     width: 100%;
     position: absolute;
     top: 50vh;
-    z-index: 2; /* Ajustamos el z-index para que el contexto esté por encima de todo */
+    z-index: 2; /* Ajustamos el z-index para que el contexto esté por encima de todo */ 
 }
 
 
@@ -244,23 +244,24 @@ body{
     display: flex;
     justify-content: center; /* Alinea los elementos a la izquierda */
     align-items: center; /* Centra verticalmente los elementos */
+  
 }
     
     #logoplin img {
-       
-        width: 20%; /* Edita el tamaño de la imagen adicional */
+      
+        width: 50%; /* Edita el tamaño de la imagen adicional */
         height: auto;
         display: block;
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        margin-bottom: 20px;
+        margin-bottom: 1px;
     }
     #logoyape img {
         
-        width: 80%; /* Edita el tamaño de la imagen derecha */
+        width: 90px; /* Edita el tamaño de la imagen derecha */
         height: auto;
         display: block;
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        margin-bottom: 20px;
+        margin-bottom: 90px;
        
     }
     #qr-container{
@@ -281,7 +282,7 @@ body{
     .pay-now-button {
         background-color: #11c417; /* Color de fondo verde */
         color: #fff; /* Color del texto blanco */
-        padding: 8px 60px; /* Ajustar el padding para hacer el botón un poco más grande */
+        padding: 8px 80px; /* Ajustar el padding para hacer el botón un poco más grande */
         border: none; /* Eliminar borde */
         border-radius: 5px; /* Bordes redondeados */
         font-size: 18px; /* Tamaño del texto */

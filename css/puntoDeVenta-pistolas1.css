@@ -1,9 +1,10 @@
-.cuadro-container {
+.pistolas1-container {
     display: flex;
     flex-wrap: wrap; /* Permite que los cuadros se envuelvan en dispositivos pequeños */
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
 
-.cuadro {
+.pistolas1-cuadro {
     width: calc(25% - 20px); /* Ajusta el ancho restando el espacio del padding */
     padding: 1px;
     text-align: center;
@@ -13,19 +14,19 @@
     margin: 10px; /* Espacio entre los cuadros */
 }
 
-.cuadro img {
+.pistolas1-cuadro img {
     max-width: 50%;
     height: auto;
 }
 
-.cuadro h3 {
+.pistolas1-cuadro h3 {
     margin-top: 10px;
     background-color: lightgrey;
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
 }
 
-.titulo {
+.titulo-pistolas{
     margin-top: 30px;
     margin-bottom: 50px;
     font-size: 40px;
@@ -35,16 +36,12 @@
 }
 
 
-@media only screen and (max-width: 900px) {
-    .cuadro {
+@media only screen and (max-width: 768px) {
+    .pistolas1-cuadro {
         width: calc(50% - 20px); /* Dos cuadros por fila en dispositivos pequeños */
+        padding: 1px;
     }
-
-    .cuadro img {
-        max-width: 80%;
-        height: auto;
-    }
-    .titulo {
+    .titulo-pistolas {
         margin-left: 20px; /* Reduce el margen izquierdo del título en dispositivos móviles */
         margin-top: 30px;
     margin-bottom: 50px;
@@ -53,11 +50,10 @@
     font-weight: bold;
    
     }
-    .cuadro h3 {
+    .pistolas1-cuadro h3 {
         margin-top: 10px;
         background-color: lightgrey;
         padding: 20px;
         font-size: 10px;
     }
-
 }

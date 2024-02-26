@@ -1,0 +1,51 @@
+.cuadro-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los cuadros se envuelvan en dispositivos pequeños */
+}
+
+.cuadro {
+    width: calc(25% - 20px); /* Ajusta el ancho restando el espacio del padding */
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgb(134, 134, 233); /* Establece un borde azul de 2px */
+    border-radius: 10px; /* Bordes curvos */
+    background-color: white; /* Fondo blanco por defecto */
+    margin: 10px; /* Espacio entre los cuadros */
+}
+
+.cuadro img {
+    max-width: 50%;
+    height: auto;
+}
+
+.cuadro h3 {
+    margin-top: 10px;
+    background-color: lightgrey;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.titulo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .cuadro {
+        width: calc(50% - 20px); /* Dos cuadros por fila en dispositivos pequeños */
+    }
+    .titulo {
+        margin-left: 20px; /* Reduce el margen izquierdo del título en dispositivos móviles */
+        margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+   
+    }
+}

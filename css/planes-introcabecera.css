@@ -1,18 +1,33 @@
 
-#titulo-planes{
+#titulo-planes {
     margin-top: 0;
     padding: 0;
+    background-color: lightblue;
 }
 .contenedor1 {
     background-color: lightblue;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
-   
+    display: flex; /* Para alinear los elementos en línea */
+    align-items: center; /* Para alinear verticalmente los elementos */
 }
 .titulo {
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 10px; /* Reducir el espacio inferior del título */
 }
 .descripcion {
     font-size: 18px;
+    margin-top: 10px; /* Reducir el espacio superior de la descripción */
+}
+.imagen-container {
+    width: 800px; /* Ancho de la imagen */
+    height: 200px; /* Alto de la imagen */
+    background-color: lightgrey; /* Color de fondo gris */
+    margin-left: 50px; /* Espacio entre la descripción y la imagen */
+}
+.imagen {
+    width: 100%; /* Para llenar el contenedor */
+    height: 100%; /* Para llenar el contenedor */
+    object-fit: cover; /* Para que la imagen cubra todo el contenedor */
 }

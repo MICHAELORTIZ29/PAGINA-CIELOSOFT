@@ -14,14 +14,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/css/puntoDeVenta-carrusel.css">
     <link rel="stylesheet" href="/css/btnWhatsappFlotante.css">
-    <link rel="stylesheet" href="/css/primeranuncio.css">
-    <link rel="stylesheet" href="/css/Inicio-equipos.css">
+
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/puntoDeVenta-principio-Cuatrocuadros.css">
-    <link rel="stylesheet" href="/css/puntoDeVenta-impresoras-dosCuadros.css">
-    <link rel="stylesheet" href="/css/puntoDeVenta-gavetas1.css">
-    <link rel="stylesheet" href="/css/puntoDeVenta-pistolas1.css">
-    <link rel="stylesheet" href="/css/puntoDeVenta-contometros1.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Lato:400,300,700,900" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
     
 </head>
 
@@ -112,103 +113,166 @@
         </div>
     </section>
 
-    <section>
-        <div class="titulo">NUESTROS PRODUCTOS</div>
-    </section>
+    <!-- ======= Our Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Nuestros Productos</h2>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-12">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-app">Impresoras</li>
+                <li data-filter=".filter-card">Gavetas</li>
+                <li data-filter=".filter-web">Lectores</li>
+                <li data-filter=".filter-conto">Contometros</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="row portfolio-container">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/RPT008-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/imagen-gavetas.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1">Impresoras | Térmicas</a></h3>
+                  <div>
+                    <a href="assets/img/imagen-contometros.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"></a>
+                    <a href="detalle-impresoras.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/imagen-gavetas.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3">Web 3</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/cbx-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2">Impresoras | Térmicas</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"></a>
+                    <a href="detalle-impresora2.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/img/imagen-pistola.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2">Card 2</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+  
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/imagen-pistola.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2">Lector de codigo de barra</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"></a>
+                    <a href="detalle-pistola.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3">App 3</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+   -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/img/gaveta-1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1">Gavetas | Caja de dinero</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"></a>
+                    <a href="portfolio-details.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3">Card 3</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+  
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1">Web 1</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
 
-    <div class="cuadro-container">
-        <div class="cuadro">
-            <a href="#impresora1">
-                <img src="images/impresora1.png" alt="Imagen 1">
-                <h3>Impresoras | Termicas </h3>
-            </a>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-conto">
+              <div class="portfolio-wrap">
+                <img src="assets/img/imagen-contometros.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h3><a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1">Contometro</a></h3>
+                  <div>
+                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"></a>
+                    <a href="portfolio-details.html" title="Details"><i class="bi bi-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
         </div>
-        <div class="cuadro">
-            <a href="#gaveta1">
-                <img src="images/imagen-gavetas.png" alt="Imagen 2">
-                <h3>Gavetas | Cajas de Dinero</h3>
-            </a>
-        </div>
-        <div class="cuadro">
-            <a href="#pistola1">
-                <img src="images/imagen-pistola.png" alt="Imagen 3">
-                <h3>Lector de codigo de Barras</h3>
-            </a>
-        </div>
-        <div class="cuadro">
-            <a href="#contometro1">
-                <img src="images/imagen-contometros.png" alt="Imagen 4">
-                <h3>Contometros</h3>
-            </a>
-        </div>
-    </div>
+      </section><!-- End Our Portfolio Section -->
 
-    <section id="impresora1">
-        <div class="titulo-impresora">IMPRESORAS TÉRMICAS</div>
-    </section>
 
-    <div class="impresoras1-container">
-        <div class="impresoras1-cuadro">
-            <a href="#">
-                <img src="images/RPT008-1.png" alt="Imagen 1">
-                <h3>Impresoras Térmica 3nSTAR RPT008 </h3>
-            </a>
-        </div>
-        <div class="impresoras1-cuadro">
-            <a href="#">
-                <img src="images/cbx-1.png" alt="Imagen 2">
-                <h3>Impresoras Térmica CBX POS89E</h3>
-            </a>
-        </div>
-    </div>
 
-    <section id="gaveta1">
-        <div class="titulo-gavetas">GAVETAS</div>
-    </section>
-        
-    
-
-    <div class="gavetas1-container">
-        <div class="gavetas1-cuadro">
-            <a href="#">
-                <img src="images/gaveta-1.png" alt="Imagen 1">
-                <h3>Caja registradora POS-D CD 330</h3>
-            </a>
-        </div>
-
-    </div>
-    <section id="pistola1">
-        <div class="titulo-pistolas">LECTORES DE CODIGO DE BARRAS</div>
-    </section>
-    
-    
-
-    <div class="pistolas1-container">
-        <div class="pistolas1-cuadro">
-            <a href="#">
-                <img src="images/imagen-pistola.png" alt="Imagen 1">
-                <h3>Lector Codigo de barra 3nSTAR SC050</h3>
-            </a>
-        </div>
-
-    </div>
-
-    <section id="contometro1">
-        <div class="titulo-pistolas">CONTOMETROS</div>
-    </section>
-    
-    
-
-    <div class="contometros1-container">
-        <div class="contometros1-cuadro">
-            <a href="#">
-                <img src="images/imagen-contometros.png" alt="Imagen 1">
-                <h3>Contometro Térmico 80mmX70Mtsx13</h3>
-            </a>
-        </div>
-
-    </div>
-
+  
 
 
     <footer class="footer-bg">
@@ -287,6 +351,15 @@
             offset: 100,
         });
     </script>
+    
+    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

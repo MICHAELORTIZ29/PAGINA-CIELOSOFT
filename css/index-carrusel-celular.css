@@ -1,0 +1,115 @@
+
+
+.detail {
+	overflow: hidden;
+	padding: 50px 0px 0px 0px;
+	min-height: 500px;
+  }
+
+  .detail .title {
+	margin-bottom: 80px;
+	text-align: center;
+  }
+
+  .detail .features .row {
+	margin-bottom: 40px;
+  }
+
+  .detail .carousel h1 {
+	font-size: 3.8em;
+  }
+
+  .detail .carousel h1,
+  .detail p {
+	text-align: left;
+	font-weight: 300;
+  }
+
+  .detail p {
+	color: #aaa;
+  }
+
+  .detail .carousel-control {
+	background: none;
+  }
+
+  .detail .app-screenshot {
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 95px;
+	width: 314px;
+	height: 680px;
+	background: url('../img/iphone-front.png') no-repeat;
+	background-size: 100%;
+  }
+
+  .detail .app-screenshot img {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 24px;
+	width: 294px;
+  }
+
+  .detail .carousel-indicators {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 5px;
+	padding-bottom: 8px;
+	width: 100%;
+	border-top: 1px solid #ed4141;
+	background: #d73c3c;
+  }
+
+  .detail .carousel-indicators .active {
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+  }
+
+  .detail .carousel-indicators li {
+	display: inline-block;
+	margin: 1px;
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+	background: #e8f49e;
+	text-indent: -999px;
+	cursor: pointer;
+  }
+
+  @media (max-width:992px) {
+
+	.detail .app-screenshot {
+		overflow: hidden;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 95px;
+		width: 310px;
+		height: 680px;
+		background: url('../images/iphone-front.png') no-repeat;
+		background-size: 100%;
+	  }
+	
+	  .detail .app-screenshot img {
+		margin-right: auto;
+		margin-left: auto;
+		padding-left: 24px;
+		width: 294px;
+	  }
+	
+
+.detail .carousel h1, .detail p{
+	text-align: center;
+}
+
+.detail p{
+		margin-bottom: 60px;
+}
+  }

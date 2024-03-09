@@ -1,0 +1,64 @@
+.titulo-plan {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pasos {
+   
+    font-weight: bold;
+}
+
+.pasos h1 {
+    color: red; /* Cambia el color del título si lo deseas */
+    font-size: 30px; /* Cambia el tamaño del título si lo deseas */
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+    font-weight: bold;
+    margin-left: 50px; /* Ajusta el margen izquierdo según tu preferencia */
+}
+
+.pasos p {
+    color: blue; /* Cambia el color del texto si lo deseas */
+    font-size: 16px; /* Cambia el tamaño del texto si lo deseas */
+    font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+    font-weight: bold;
+    margin-left: 50px; /* Ajusta el margen izquierdo según tu preferencia */
+}
+
+.pasos img {
+    display: block;
+    margin: 0 auto;
+    max-width: 60%;
+    height: auto;
+    border: 2px solid black;
+}
+
+  
+  
+  @media (max-width: 768px) {
+    .pasos h1 {
+        color: red; /* Cambia el color del título si lo deseas */
+        font-size: 15px; /* Cambia el tamaño del título si lo deseas */
+        font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+        font-weight: bold;
+        margin-left: 10px; /* Ajusta el margen izquierdo según tu preferencia */
+    }
+    
+    .pasos p {
+        color: blue; /* Cambia el color del texto si lo deseas */
+        font-size: 10px; /* Cambia el tamaño del texto si lo deseas */
+        font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
+        font-weight: bold;
+        margin-left: 10px; /* Ajusta el margen izquierdo según tu preferencia */
+    }
+    .pasos img {
+        display: block;
+        margin: 0 auto;
+        max-width: 95%;
+        height: auto;
+        border: 2px solid black;
+    }
+  }

@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+    
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+    z-index: 2; /* Ajustamos el z-index para que el contexto esté por encima de todo */ 
+}
+
+
+.area {
+    background: #abaff2;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 90%;
+    min-height: 60vh;
+    position: relative;
+    overflow: hidden;
+    margin-left: 60px;
+}
+
+.area img {
+    max-width: 100%; /* Hacemos que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Permitimos que la altura se ajuste proporcionalmente */
+    display: block; /* Aseguramos que la imagen se comporte como un bloque */
+    position: relative; /* Ajustamos la posición de la imagen */
+    z-index: 1; /* Ajustamos el z-index para que la imagen esté por encima de los círculos */
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 12.5px;
+    height: 12.5px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 7.5px;
+    height: 7.5px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+.circles li:nth-child(11) {
+    left: 51%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+.circles li:nth-child(12) {
+    left: 32%;
+    width: 75px;
+    height: 75px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.container-fluid {
+    position: relative;
+    z-index: 1; /* Asegurar que el contenido esté delante del fondo animado */
+    color: #fff; /* Color de texto blanco */
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+/* --------------------------------------------- */
+#titulo1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambia el tipo de letra */
+    margin-top: 40px; /* Ajusta el espacio superior */
+    line-height: 1.5; /* Ajusta el espacio entre líneas */
+    
+}
+
+
+
+
+#yape,
+#plin {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+
+#logoPlin {
+    margin-right: 50px; /* Ajusta el margen derecho según sea necesario */
+    width: 30%; /* Edita el tamaño de la imagen adicional */
+    height: auto;
+    display: block;
+    margin-top: 40px; /* Ajusta el espacio superior */
+    margin-bottom: 20px;
+    
+}
+#logoYape {
+    margin-right: 50px; /* Ajusta el margen derecho según sea necesario */
+    width: 30%; /* Edita el tamaño de la imagen derecha */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 15px; /* Ajusta el espacio superior */
+   
+}
+#qrPlin {
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+    width: 30%; /* Edita el tamaño de la imagen adicional */
+    height: auto;
+    display: block;
+    margin-top: 50px; /* Ajusta el espacio superior */
+    margin-bottom: 20px;
+    
+}
+#qrYape {
+    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+    width: 30%; /* Edita el tamaño de la imagen derecha */
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 35px; /* Ajusta el espacio superior */
+   
+}
+
+#yape .qr-container h6,
+#plin .qr-container h6,
+#yape .qr-container p,
+#plin .qr-container p {
+    margin: 0; /* Elimina el margen predeterminado */
+    align-items: center;
+}
+.boton-container{
+    display: none;
+}
+
+/* ------------------------------------------ */
+@media (max-width: 900px) {
+
+    .area {
+        background: #abaff2;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 90%;
+        min-height: 60vh;
+        position: relative;
+        overflow: hidden;
+        margin-left: 20px;
+    }
+    #titulo1 h1 {
+        text-align: center; /* Centra el título horizontalmente */
+        margin-bottom: 20px; /* Espacio inferior entre el título y la imagen */
+        font-size: 20px; /* Tamaño del título */
+    }
+    #yape,
+    #plin {
+    display: flex;
+    justify-content: center; /* Alinea los elementos a la izquierda */
+    align-items: center; /* Centra verticalmente los elementos */
+  
+}
+    
+    #logoplin img {
+      
+        width: 50%; /* Edita el tamaño de la imagen adicional */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        margin-bottom: 1px;
+    }
+    #logoyape img {
+        
+        width: 90px; /* Edita el tamaño de la imagen derecha */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+        margin-bottom: 90px;
+       
+    }
+    #qr-container{
+        display: none;
+    }
+
+    .boton-container { 
+    display: flex;
+    justify-content: center; /* Alinea los elementos a la izquierda */
+    align-items: center; /* Centra verticalmente los elementos */
+    }
+
+    .boton-container {
+        text-align: center; /* Alinear el botón al centro */
+        margin-bottom: 20px;
+    }
+    
+    .pay-now-button {
+        background-color: #11c417; /* Color de fondo verde */
+        color: #fff; /* Color del texto blanco */
+        padding: 8px 80px; /* Ajustar el padding para hacer el botón un poco más grande */
+        border: none; /* Eliminar borde */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 18px; /* Tamaño del texto */
+        cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    }
+    
+    .pay-now-button:hover {
+        background-color: #0b8e0e; /* Cambiar color de fondo al pasar el cursor */
+    }
+}

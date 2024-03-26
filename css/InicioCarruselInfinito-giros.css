@@ -1,0 +1,182 @@
+
+section .slide-giros {
+	display:flex;
+	flex-flow:column;
+	align-items:center;
+	div.container-giros {
+		transition:all .3s ease;
+		h1 { margin:15px 0 0 0; }
+		h3 { margin:0 0 15px 0; }
+	}
+	@media (max-width:992px) {
+		
+		padding:0 20px 0 20px;
+	
+	}
+} 
+
+
+
+
+section .slide-giros {
+	margin:0 0 50px 0;
+	.no-marg { margin:0 0 0 0; }
+}
+
+div.highway-slider {
+	display:flex;
+	justify-content:center;
+	width:100%;
+	height:150px;
+	div.highway-barrier {
+		overflow:hidden;
+		position:relative;
+	}
+	ul.highway-lane {
+		display:flex;
+		height:100%;
+		li.highway-car {
+			flex:1;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			background:#fff;
+			color:#343434;
+		}
+	}
+}
+
+.show-details-btn {
+    display: block;
+    margin: 0 auto; /* Para centrar horizontalmente */
+}
+
+.titulo-giro{
+	text-align: center;
+	margin-top: 50px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 50px;
+
+
+}
+
+.boton-info2{
+	text-align: center;
+}
+.custom-btn {
+	background-color: #70b2f7;; /* Color inicial verde */
+	border-color: #0056b3;
+	color: #080808; /* Color inicial negro */
+	border-radius: 10px; /* Bordes circulares */
+	transition: all 0.3s ease; /* Transición suave */
+	margin-top: 10px;
+	padding: 8px;
+  }
+
+  .custom-btn:hover {
+	background-color: #0056b3; /* Color verde oscuro al pasar el ratón */
+  }
+
+  .custom-btn:active {
+	transform: scale(1.2); /* Aumentar tamaño al hacer clic */
+	background-color: #03284f; /* Cambiar a un color más oscuro al hacer clic */
+  }
+
+.highway-car {
+    font-size: 50px; /* Ajusta el tamaño del icono según lo necesites */
+    text-align: center;
+}
+
+.texto {
+    font-size: 20px; /* Ajusta el tamaño del texto según lo desees */
+    margin-top: 0px; /* Ajusta el margen superior del texto según lo desees */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+.texto2 {
+    font-size: 20px; /* Ajusta el tamaño del texto según lo desees */
+    margin-top: 0px; /* Ajusta el margen superior del texto según lo desees */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+
+@keyframes translatestf {
+	0% { transform:translateX(100%);  }
+	100% { transform:translateX(-500%);  }
+}
+#stffull div.highway-barrier {
+	ul.highway-lane {
+		width:500%;
+		li.highway-car {
+			animation:translatestf 30s linear infinite;
+			h4 { font-size:28px; }
+		}
+	}
+}
+
+@keyframes translateinfinite {
+	100% { transform:translateX(calc(-180px * 12));  }
+}
+#infinite div.highway-barrier {
+	background:#fff;
+	box-shadow:0 3px 10px -3px rgba(0,0,0,0.3);
+	&::before,
+	&::after {
+		content: " ";
+		position:absolute;
+		z-index:9;
+		width:180px;
+		height:100%;	
+	}
+	&::before {
+		top:0;left:0;
+		/* background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); */
+	}
+	&::after {
+		top:0;right:0;
+		/* background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); */
+	}
+	ul.highway-lane {
+		width:calc(180px * 24);
+		li.highway-car {
+			width:180px;
+			animation:translateinfinite 25s linear infinite;
+			span.fab {
+				font-size:65px;
+			}
+		}
+	}
+}
+
+#red { background: #cb5454; }
+#orange { background: #cb8054; }
+#yellow { background: #cbba54; }
+#green { background: #69b46e; }
+#blue { background: #6091b0; }
+
+@media (min-width: 768px) {
+    .show-details-btn {
+        display: none;
+    }
+	.titulo-giro {
+	
+		margin-top: 30px; /* Margen superior ajustado */
+	}
+
+
+}
+
+@media (max-width: 767.98px) {
+	.titulo-giro {
+		font-size: 30px; /* Tamaño del título para dispositivos móviles */
+		margin-top: 50px; /* Margen superior ajustado */
+	}
+}
+.highway-car img {
+    width: 100%; /* Ancho del 100% para que las imágenes ocupen todo el espacio disponible */
+    height: auto; /* Altura automática para mantener la proporción */
+    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    padding: 5px; /* Espacio alrededor de la imagen */
+}
+
+
+

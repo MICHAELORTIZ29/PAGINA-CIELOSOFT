@@ -1,6 +1,6 @@
 
 .navbar {
-    background-color: rgb(7, 184, 238) !important;
+    background-color: white!important;
     z-index: 1000; 
 }
 .navbar-nav .nav-item .nav-link {
@@ -21,7 +21,7 @@
     transition: color 0.3s, font-size 0.3s; /* Transición de color y tamaño de fuente */
 }
 .navbar-nav .nav-item:hover {
-    background-color: #0665f4; /* Cambiar el color de fondo al pasar el cursor */
+    background-color: #e4ecf7; /* Cambiar el color de fondo al pasar el cursor */
 }
 
 .navbar-nav .nav-item .nav-link:hover,
@@ -74,3 +74,4 @@ ul {
 .dropdown-menu {
     z-index: 1000; /* Asegura que los menús desplegables estén por encima de otros elementos */
 }
+

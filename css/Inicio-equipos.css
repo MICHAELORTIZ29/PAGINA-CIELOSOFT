@@ -36,7 +36,7 @@
 }
 
 #mejores-equipos .title span {
-    color: #007bff; /* Cambiar el color del texto "Facturación Electrónica" si lo deseas */
+    color: #88bcf4; /* Cambiar el color del texto "Facturación Electrónica" si lo deseas */
 }
 #mejores-equipos .subtitle {
     font-weight: bold; /* Texto en negrita */
@@ -52,7 +52,7 @@
     margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 .btn-info {
-    background-color: #007bff; /* Color de fondo celeste */
+    background-color: #70b2f7; /* Color de fondo celeste */
     color: #fff; /* Color del texto blanco */
     border-color: #007bff; /* Color del borde igual al fondo */
 }

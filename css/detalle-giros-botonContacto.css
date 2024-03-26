@@ -1,0 +1,67 @@
+.botoncontacto #contact-button {
+    display: block;
+    width: 200px; /* Ancho del botón */
+    padding: 10px; /* Espacio interno del botón */
+    text-align: center; /* Centrar texto horizontalmente */
+    background-color: green; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes ovalados */
+    font-size: 16px; /* Tamaño del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 auto; /* Margen automático para centrar verticalmente */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+	.centered-button {
+        font-size: 14px; /* Reducir tamaño del texto en dispositivos más pequeños */
+        padding: 8px 16px; /* Reducir espaciado interno */
+    }
+}
+.check-icon {
+    color: rgb(8, 95, 17); /* Cambia el color del icono a azul */
+}
+.show-details-btn {
+    display: block;
+    width: 200px; /* Ancho del botón */
+    padding: 10px; /* Espacio interno del botón */
+    text-align: center; /* Centrar texto horizontalmente */
+    background-color: green; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes ovalados */
+    font-size: 16px; /* Tamaño del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 auto; /* Margen automático para centrar verticalmente */
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.btn-group .btn {
+	flex: 0 0 calc(25% - 10px);
+	margin: 5px;
+}
+@media (max-width: 768px) {
+	.btn-group .btn {
+		flex: 0 0 calc(33.33% - 10px);
+	}
+}
+@media (max-width: 576px) {
+	.btn-group .btn {
+		flex: 0 0 calc(50% - 10px);
+	}
+}
+@media (max-width: 400px) {
+	.btn-group {
+		flex-direction: column;
+		align-items: center;
+	}
+}

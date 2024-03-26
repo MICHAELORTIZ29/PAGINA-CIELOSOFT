@@ -1,25 +1,55 @@
 #ventajas .descripcion {
     text-align: justify;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #585858;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #4794b3;
+    color: rgb(255, 255, 255);
+}
+
+.tit1 h2{
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+.segundo {
+    margin-left: 50px;
+}
+.iconosventajas {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.iconosventajas{
+    font-size: 17px; 
+    font-weight: bold;
 }
 
 @media (max-width: 767.98px) {
     #ventajas .descripcion {
         text-align: justify;
         padding: 10px;
-        border: 1px solid #ccc;
+        border: 1px solid #585858;
         border-radius: 10px;
-        background-color: #f9f9f9;
+        background-color: #4794b3;
+       
+    }
+
+    .tit1 h2{
+        font-size: 25px; 
+        font-weight: bold;
+    }
+
+    .iconosventajas{
+        font-size: 15px; 
+        font-weight: bold;
     }
 }
 .green-box {
     position: absolute;
     bottom: 10px; /* Ajusta la posición vertical según sea necesario */
     left: 10px; /* Ajusta la posición horizontal según sea necesario */
-    background-color: #03e2ff; /* Color verde */
+    background-color: #0095cd; /* Color verde */
     padding: 5px 10px; /* Ajusta el relleno según sea necesario */
     border-radius: 5px; /* Borde redondeado */
 }

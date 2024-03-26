@@ -1,7 +1,15 @@
 /* Estilos para el acordeón */
+.text-acorderon{
+    font-size: 18px;
+    text-decoration: none;
+}
 
+ .btn-link  {
+    text-decoration: none;
+}
 .card-header {
-    background-color: rgb(122, 188, 249) !important;
+    background-color: #70b2f7 !important;
+    border: 2px solid #007bff;
 }
 #accordion {
     margin-top: 20px;
@@ -21,6 +29,18 @@
 
 .card-body p {
     margin-bottom: 0; /* Elimina el margen inferior del párrafo dentro del cuerpo */
+}
+.btn-link {
+    text-align: left;
+    width: 100%;
+    color: #000;
+    transition: transform 0.3s; /* Agrega una transición suave de 0.3 segundos al transform */
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #f4f5f6;
+    transform: scale(1.4); /* Aumenta el tamaño del botón al hacer hover o focus */
 }
 
 /* Estilos responsivos */
@@ -44,5 +64,5 @@
 
 .btn-link:hover,
 .btn-link:focus {
-    color: #007bff; /* Cambia el color del texto del botón al pasar el cursor o al hacer clic */
+    color: #f4f5f6; /* Cambia el color del texto del botón al pasar el cursor o al hacer clic */
 }

@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link id="theme-style" rel="stylesheet"  href="/css/nosotros-carruselCabecera.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/btnWhatsappFlotante.css">
     <link rel="stylesheet" href="/css/Nosotros-imagenprincipal.css">
     <link rel="stylesheet" href="/css/nosotros-acordeon.css">
+ 
     
 
 </head>
@@ -67,7 +69,7 @@
                                 utiliarios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="utiliariosDropdown">
-                                <li><a class="dropdown-item" href="tutoriales.html">Tutoriales</a></li>
+                                <li><a class="dropdown-item" href="https://www.youtube.com/@CIELOSOFT"  target="_blank">Tutoriales</a></li>
                                 <li><a class="dropdown-item" href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
                                 <li><a class="dropdown-item" href="validacionCPE.html">Validacion CPE</a></li>
                             </ul>
@@ -84,6 +86,51 @@
             </div>
         </nav>
     </header>
+
+
+    <div id="hero" class="hero-section">
+        <div id="hero-carousel" class="hero-carousel carousel carousel-fade slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="figure-holder-wrapper">
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <div class="figure-holder">
+                            <img class="figure-image img-fluid" src="images/pc2.png" alt="image" />
+                        </div><!--//figure-holder-->
+                    </div><!--//row-->
+                </div><!--//container-->
+            </div><!--//figure-holder-wrapper-->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item item-1 active">
+                    <div class="item-content container">
+                        <div class="item-content-inner">
+                            <h2 class="heading">Facturación electrónica segura y eficiente con <br class="d-none d-md-block">CIELOSOFT</h2>
+                            <p class="intro">Siempre a la vanguardia de la tecnologia</p>
+                            <!-- <a class="btn btn-primary btn-cta" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/" target="_blank">Download Now</a> -->
+                        </div><!--//item-content-inner-->
+                    </div><!--//item-content-->
+                </div><!--//item-->
+                <div class="carousel-item item-2">
+                    <div class="item-content container">
+                        <div class="item-content-inner">
+                            <h2 class="heading">Optimiza tu proceso de facturación con Cielosoft en la nube.</h2>
+                            <!-- <p class="intro">AppKit Landing is built on Bootstrap 5 and SASS so it's quick and easy to customise!</p> -->
+                            <!-- <a class="btn btn-primary btn-cta" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/" target="_blank">Find out more</a> -->
+                        </div><!--//item-content-inner-->
+                    </div>
+                </div><!--//item-->
+                <div class="carousel-item item-3">
+                    <div class="item-content container">
+                        <div class="item-content-inner">
+                            <h2 class="heading">Disponible para todo tipo de dispositivos</h2>
+                            <p class="intro">Se adapta a todas tus necesidades </p>
+                            <!-- <a class="btn btn-primary btn-cta" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/appkit-landing-free-bootstrap-theme-for-developers-and-startups/" target="_blank">Get Started</a> -->
+                        </div><!--//item-content-inner-->
+                    </div>
+                </div><!--//item-->
+            </div><!--//carousel-inner-->
+        </div><!--//carousel-->
+    </div><!--//hero-->
 
     <section class="blue-section" style="border-radius: 0 0 20px 20px;">
         <div class="container">
@@ -128,7 +175,7 @@
             <div class="card-header" id="headingOne">
                 <h4 class="mb-0">
                     <button class="btn btn-link btn-yellow text-center" data-toggle="collapse" data-target="#tab-mision" aria-expanded="true" aria-controls="tab-mision">
-                        <span>Misión</span>
+                        <span class="text-acorderon">Misión</span>
                     </button>
                 </h4>
             </div>
@@ -148,7 +195,7 @@
             <div class="card-header" id="headingTwo">
                 <h4 class="mb-0">
                     <button class="btn btn-link btn-yellow text-center collapsed" data-toggle="collapse" data-target="#tab-vision" aria-expanded="false" aria-controls="tab-vision">
-                        <span>Visión</span>
+                        <span class="text-acorderon" >Visión</span>
                     </button>
                 </h4>
             </div>
@@ -166,14 +213,14 @@
             <div class="card-header" id="headingThree">
                 <h4 class="mb-0">
                     <button class="btn btn-link btn-yellow text-center collapsed" data-toggle="collapse" data-target="#tab-valores" aria-expanded="false" aria-controls="tab-valores">
-                        <span>Términos y Condiciones</span>
+                        <span class="text-acorderon">Términos y Condiciones</span>
                     </button>
                 </h4>
             </div>
             <div id="tab-valores" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body">
                     <p>
-                        En NewCable, nos comprometemos a proteger la privacidad de nuestros
+                        En Cielosoft, nos comprometemos a proteger la privacidad de nuestros
                         clientes y usuarios. Esta Política de Privacidad describe cómo recopilamos,
                         usamos, almacenamos y divulgamos la información personal que obtenemos
                         a través de nuestros servicios de Internet de fibra óptica y TV por cable. Al
@@ -198,37 +245,43 @@
             <div class="row">
                 <div class="col-md-3">
                     <img src="/images/logo3.2.png" alt="Logo de la empresa" style="width: 150px;">
-                    <p>Somos una empresa legalmente constituida con RUC: 10459294771 siempre buscando traerte el mejor servicio</p>
+                    <p>Somos una empresa legalmente constituida con RUC: 10459294771 siempre buscando traerte el mejor
+                        servicio</p>
                 </div>
                 <div class="col-md-3">
                     <h5>Enlaces</h5>
                     <ul>
                         <li><a href="nosotros.html" class="animated-link">Nosotros</a></li>
-                        <li><a href="#" class="animated-link">Cuenta Demo</a></li>
-                        <li><a href="" class="animated-link">Tutoriales</a></li>
-                        <li><a href="" class="animated-link">Equipos</a></li>
-                        <li><a href="#" class="animated-link">Preguntas frecuentes</a></li>
+                        <li><a href="https://demo.cielost2.com/" class="animated-link" target="_blank">Cuenta Demo</a></li>
+                        <li><a href="tutoriales.html" class="animated-link">Tutoriales</a></li>
+                        <li><a href="puntoDeVenta.html" class="animated-link">Equipos</a></li>
+                        <li><a href="preguntasFrecuentes.html" class="animated-link">Preguntas frecuentes</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,%20Estoy%20interesada%20más%20información%20por%20favor.!" target="_blank"><i class="fab fa-whatsapp"></i> Ventas </a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i> Soporte</a></li>
-                        <li><a href="mailto:cielosoft@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i> Cielosoft@gmail.com</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=✅%20Hola,%20Cielosoft%20Estoy%20interesada%20más%20información%20por%20favor.!%20🤩💻"
+                                target="_blank"><i class="fab fa-whatsapp"></i> Ventas </a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=✅%20Hola,%20Cielosoft%20Necesito%20ayuda.!%20🤩💻"
+                                target="_blank"><i class="fab fa-whatsapp"></i> Soporte</a></li>
+                        <li><a href="mailto:neilampuero@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i>
+                                Cielosoft@gmail.com</a></li>
                     </ul>
                     <!-- Agregamos los iconos de redes sociales debajo del correo -->
                     <ul class="footer-social-icons mt-1" style="margin-left: 30px;">
-                        <li><a href="https://www.facebook.com/CIELOSOFTPUCALLPA"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/CIELOSOFTPUCALLPA " target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=✅%20Hola,%20Cielosoft%20Necesito%20ayuda.!%20🤩💻"
+                                target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.youtube.com/@CIELOSOFT" target="_blank"><i class="fab fa-youtube"></i></a></li>
                         <!-- Agrega más iconos según sea necesario -->
                     </ul>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h5>Distribuidor autorizado de: </h5>
                     <ul>
@@ -254,20 +307,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    
+
+
     <script src="/js/script.js"></script>
-    <script src="/js/carrusel1.js"></script>
+    <!-- <script src="/js/carrusel1.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/nosotros-carrusel.js"></script>
 
-    <script>
-        
-        AOS.init({
-            once: true, // Para que la animación se ejecute solo una vez
-            offset: 100,
-        });
-    </script>
+
     
 </body>
 </html>

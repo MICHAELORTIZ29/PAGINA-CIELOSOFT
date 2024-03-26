@@ -1,0 +1,293 @@
+/* body {
+    font-family: 'Open Sans', arial, sans-serif;
+    color: #494d55;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #3aa7aa;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #339597;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+  
+  a:focus {
+    text-decoration: none;
+  }
+  
+  .btn, a.btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+  
+  .btn .fa, a.btn .fa {
+    margin-right: 5px;
+  }
+  
+  .btn:focus, a.btn:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  .btn-cta, a.btn-cta {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  
+  .btn-primary {
+    background: #40babd;
+    border: 1px solid #40babd;
+    color: #fff;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.hover {
+    background: #3aa7aa;
+    color: #fff;
+    border: 1px solid #3aa7aa;
+  }
+  
+  .btn-inverse {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid transparent;
+    color: #fff;
+  }
+  
+  .btn-inverse:hover, .btn-inverse:focus, .btn-inverse:active, .btn-inverse.active, .btn-inverse.hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px solid transparent;
+  }
+  
+  .carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+  }
+  
+  .carousel-fade .carousel-inner .item,
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+  }
+  
+  .carousel-fade .carousel-inner .active,
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }
+  
+  .carousel-fade .carousel-inner .next,
+  .carousel-fade .carousel-inner .prev,
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  }
+  
+  .carousel-indicators {
+    bottom: 30px;
+    margin-bottom: 0;
+    z-index: 10;
+  }
+  
+  .carousel-indicators button[data-bs-target] {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    width: 11px;
+    height: 11px;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+  }
+  
+  .carousel-indicators button[data-bs-target].active {
+    background-color: #40babd;
+    width: 11px;
+    height: 11px;
+  }
+   */
+  /* -------------------------------------------------------------- */
+  .hero-section {
+    min-height: 560px;
+    background: #494d55;
+    position: relative;
+}
+
+.hero-section .figure-holder-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-section .figure-holder {
+    position: relative;
+    height: 560px;
+    width: 100%;
+}
+
+.hero-section .figure-holder .figure-image {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    z-index: 10;
+}
+
+.hero-carousel {
+    height: 560px;
+    color: #fff;
+}
+
+.hero-carousel .carousel-inner .carousel-item {
+    height: 560px;
+    background-position: center center;
+}
+
+.hero-carousel .carousel-inner .item-1 {
+    background-image: url("../images/hero-1.jpg");
+    background-size: cover;
+}
+
+.hero-carousel .carousel-inner .item-2 {
+    background-image: url("../images/hero-2.jpg");
+    background-size: cover;
+}
+
+.hero-carousel .carousel-inner .item-3 {
+    background-image: url("../images/hero-3.jpg");
+    background-size: cover;
+}
+
+.hero-carousel .carousel-inner .heading {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.hero-carousel .carousel-inner .intro {
+    font-size: 18px;
+}
+
+.hero-carousel .carousel-inner .intro+.btn {
+    margin-top: 15px;
+}
+
+  @media (max-width: 767.98px) {
+
+    .hero-section .figure-image {
+      width: 300px;
+    }
+    .hero-carousel .carousel-inner .heading {
+      font-size: 26px;
+    }
+    .hero-carousel .carousel-inner .item-content-inner {
+      padding-top: 100px;
+    }
+    .hero-section .figure-holder .figure-image {
+      width: inherit;
+      bottom: 0;
+      top: inherit;
+      right: inherit;
+      left: 15px;
+      max-width: 320px;
+    }
+    .technologies li {
+      margin-bottom: 15px;
+    }
+    .members-wrapper .item {
+      margin-bottom: 30px;
+    }
+    .members-wrapper .item:last-child {
+      margin-bottom: 0;
+    }
+    .hero-carousel {
+      height: 660px;
+    }
+    .hero-section .carousel-inner {
+      height: 660px;
+    }
+    .hero-carousel .carousel-inner .item {
+      height: 660px;
+    }
+  
+  }
+  
+  @media (min-width: 768px) {
+    .feature-nav {
+      text-align: left;
+      padding-left: 30px;
+    }
+    .hero-section .figure-holder .figure-image {
+      width: 360px;
+      bottom: inherit;
+      top: 130px;
+    }
+    .hero-carousel .carousel-inner .item-content-inner {
+      max-width: 300px;
+      padding-top: 120px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .main-nav .nav .nav-item {
+      margin-right: 25px;
+    }
+    .feature-nav {
+      margin-top: 30px;
+      padding-left: 15px;
+    }
+    .hero-section .figure-holder .figure-image {
+      width: 420px;
+      bottom: inherit;
+      top: 130px;
+    }
+    .hero-carousel .carousel-inner .item-content-inner {
+      max-width: 500px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .hero-section .figure-holder .figure-image {
+      width: 570px;
+      bottom: 0;
+      top: inherit;
+    }
+  }
+  

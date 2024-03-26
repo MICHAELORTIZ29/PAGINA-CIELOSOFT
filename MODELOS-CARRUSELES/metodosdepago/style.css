@@ -239,6 +239,14 @@ body{
         margin-bottom: 20px; /* Espacio inferior entre el título y la imagen */
         font-size: 20px; /* Tamaño del título */
     }
+    .area {
+        background: #4e54c8;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 50%;
+        min-height: 50vh;
+        position: relative;
+        overflow: hidden;
+    }
     #yape,
     #plin {
     display: flex;
@@ -268,7 +276,7 @@ body{
         display: none;
     }
 
-    .boton-container {
+    .boton-container { 
     display: flex;
     justify-content: center; /* Alinea los elementos a la izquierda */
     align-items: center; /* Centra verticalmente los elementos */

@@ -90,19 +90,19 @@ const sliderDb = [
     },
     {
       //title:"Titulo de ejemplo cuatro",
-      src:"https://source.unsplash.com/random/?bikes"
+      src:"/images/imgslider1.jpg"
     },
     {
       //title:"Titulo de ejemplo cinco",
-      src:"https://source.unsplash.com/random/?houses"
+      src:"/images/imgslider3.jpg"
     },
     {
       //title:"Titulo de ejemplo seis",
-      src:"https://source.unsplash.com/random/?peets"
+      src:"/images/imgslider2.jpg"
     },
     {
       //title:"Titulo de ejemplo siete",
-      src:"https://source.unsplash.com/random"
+      src:"/images/imgslider1.jpg"
     },
   
   ]

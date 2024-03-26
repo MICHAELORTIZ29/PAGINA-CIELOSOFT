@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/css/puntoDeVenta-carrusel.css">
+    <!-- <link rel="stylesheet" href="/css/index-carrusel-js.css> -->
+    <link rel="stylesheet" href="/css/index-carrusel-js.css">
     <link rel="stylesheet" href="/css/btnWhatsappFlotante.css">
 
     <link rel="stylesheet" href="/css/footer.css">
@@ -76,7 +77,7 @@
                                 utiliarios
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="utiliariosDropdown">
-                                <li><a class="dropdown-item" href="tutoriales.html">Tutoriales</a></li>
+                                <li><a class="dropdown-item" href="https://www.youtube.com/@CIELOSOFT"  target="_blank">Tutoriales</a></li>
                                 <li><a class="dropdown-item" href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
                                 <li><a class="dropdown-item" href="validacionCPE.html">Validacion CPE</a></li>
                             </ul>
@@ -93,11 +94,32 @@
         </nav>
     </header>
     
-    <section class="section">
-        <div class="section-container">
-            <div class="slider-container"></div>
-        </div>
-    </section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img class="d-block w-100" src="images/img4.1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="images/img4.2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="images/img4.jpg" alt="Third slide">
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="background-color: blue; border-radius: 50%;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="background-color: blue; border-radius: 50%;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
 
     <!-- ======= Our Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -125,9 +147,9 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/RPT008-1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h3><a href="assets/img/imagen-gavetas.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1">Impresoras | Térmicas</a></h3>
+                  <h3><a href="detalle-impresoras.html">Impresoras | Térmicas</a></h3>
                   <div>
-                    <a href="assets/img/imagen-contometros.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"></a>
+                    <a href="detalle-impresoras.html"  title="App 1"></a>
                     <a href="detalle-impresoras.html" title="Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -151,9 +173,9 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/cbx-1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h3><a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2">Impresoras | Térmicas</a></h3>
+                  <h3><a href="detalle-impresora2.html">Impresoras | Térmicas</a></h3>
                   <div>
-                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"></a>
+                    <a href="detalle-impresora2.html" ></a>
                     <a href="detalle-impresora2.html" title="Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -177,9 +199,9 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/imagen-pistola.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h3><a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2">Lector de codigo de barra</a></h3>
+                  <h3><a href="detalle-pistola.html">Lector de codigo de barra</a></h3>
                   <div>
-                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"></a>
+                    <a href="detalle-pistola.html" ></a>
                     <a href="detalle-pistola.html" title="Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -203,9 +225,9 @@
               <div class="portfolio-wrap">
                 <img src="images/imagen-gavetas.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h3><a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1">Gavetas | Caja de dinero</a></h3>
+                  <h3><a href="detalle-gaveta.html" >Gavetas | Caja de dinero</a></h3>
                   <div>
-                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"></a>
+                    <a href="detalle-gaveta.html" ></a>
                     <a href="detalle-gaveta.html" title="Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -242,9 +264,9 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/imagen-contometros.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h3><a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1">Contometro Térmico</a></h3>
+                  <h3><a href="detalle-contometros.html">Contometro Térmico</a></h3>
                   <div>
-                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"></a>
+                    <a href="detalle-contometros.html"></a>
                     <a href="detalle-contometros.html" title="Details"><i class="bi bi-link"></i></a>
                   </div>
                 </div>
@@ -266,37 +288,43 @@
             <div class="row">
                 <div class="col-md-3">
                     <img src="/images/logo3.2.png" alt="Logo de la empresa" style="width: 150px;">
-                    <p>Somos una empresa legalmente constituida con RUC: 10459294771 siempre buscando traerte el mejor servicio</p>
+                    <p>Somos una empresa legalmente constituida con RUC: 10459294771 siempre buscando traerte el mejor
+                        servicio</p>
                 </div>
                 <div class="col-md-3">
                     <h5>Enlaces</h5>
                     <ul>
                         <li><a href="nosotros.html" class="animated-link">Nosotros</a></li>
-                        <li><a href="#" class="animated-link">Cuenta Demo</a></li>
-                        <li><a href="" class="animated-link">Tutoriales</a></li>
-                        <li><a href="" class="animated-link">Equipos</a></li>
-                        <li><a href="#" class="animated-link">Preguntas frecuentes</a></li>
+                        <li><a href="https://demo.cielost2.com/" class="animated-link" target="_blank">Cuenta Demo</a></li>
+                        <li><a href="tutoriales.html" class="animated-link">Tutoriales</a></li>
+                        <li><a href="puntoDeVenta.html" class="animated-link">Equipos</a></li>
+                        <li><a href="preguntasFrecuentes.html" class="animated-link">Preguntas frecuentes</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,%20Estoy%20interesada%20más%20información%20por%20favor.!" target="_blank"><i class="fab fa-whatsapp"></i> Ventas </a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i> Soporte</a></li>
-                        <li><a href="mailto:cielosoft@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i> Cielosoft@gmail.com</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=✅%20Hola,%20Cielosoft%20Estoy%20interesada%20más%20información%20por%20favor.!%20🤩💻"
+                                target="_blank"><i class="fab fa-whatsapp"></i> Ventas </a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=✅%20Hola,%20Cielosoft%20Necesito%20ayuda.!%20🤩💻"
+                                target="_blank"><i class="fab fa-whatsapp"></i> Soporte</a></li>
+                        <li><a href="mailto:neilampuero@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i>
+                                Cielosoft@gmail.com</a></li>
                     </ul>
                     <!-- Agregamos los iconos de redes sociales debajo del correo -->
                     <ul class="footer-social-icons mt-1" style="margin-left: 30px;">
-                        <li><a href="https://www.facebook.com/CIELOSOFTPUCALLPA"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/CIELOSOFTPUCALLPA " target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=Hola,Cielosoft%20Necesito%20ayuda.!" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=+51984599871&text=✅%20Hola,%20Cielosoft%20Necesito%20ayuda.!%20🤩💻"
+                                target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                         <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.youtube.com/@CIELOSOFT" target="_blank"><i class="fab fa-youtube"></i></a></li>
                         <!-- Agrega más iconos según sea necesario -->
                     </ul>
                 </div>
-                
+
                 <div class="col-md-3">
                     <h5>Distribuidor autorizado de: </h5>
                     <ul>
@@ -330,13 +358,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
-        
-        AOS.init({
-            once: true, // Para que la animación se ejecute solo una vez
-            offset: 100,
-        });
-    </script>
     
     <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

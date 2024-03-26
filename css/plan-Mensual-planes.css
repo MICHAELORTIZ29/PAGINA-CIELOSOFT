@@ -13,7 +13,7 @@
     padding: 20px; /* Espaciado interno */
     margin-bottom: 20px; /* Espaciado entre contenedores */
     text-align: center; /* Centrar texto */
-    border: 2px solid #FFA500; /* Borde naranja */
+    border: 2px solid #007bff; /* Borde naranja */
 }
 
 /* Estilos para las imágenes dentro de los contenedores */
@@ -47,10 +47,12 @@
     font-weight: bold; /* Texto en negrita */
 }
 .cabecera-verde {
-    background-color: rgb(16, 127, 218);
+    background-color: #70b2f7;
+    border: 2px solid #007bff;
     padding: 20px; /* Ajusta el relleno según sea necesario */
     border-top-left-radius: 20px; /* Bordes ovalados en la esquina superior izquierda */
     border-top-right-radius: 20px; /* Bordes ovalados en la esquina superior derecha */
+    
 }
 .item-servicios p {
     text-align: left; /* Alinea el texto a la izquierda */

@@ -19,8 +19,12 @@
     border:solid 1px black;
   }
   .carousel__slides figure figcaption {
-    font-size: 10px;
+    font-weight: bold;
+    font-size: 12px;
     text-align: left;
+    /* max-height: 3em; */
+    overflow: hidden;
+    padding: 5px;
 }
   
   @media (max-width: 992px) {

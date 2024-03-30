@@ -186,7 +186,7 @@ body{
 
 
 #logoPlin {
-    margin-left: 200px;
+    /* margin-left: 200px; */
    
     width: 30%; /* Edita el tamaño de la imagen adicional */
     height: auto;
@@ -196,7 +196,7 @@ body{
     
 }
 #logoYape {
-    margin-left: 200px;
+    /* margin-left: 200px; */
     width: 30%; /* Edita el tamaño de la imagen derecha */
     height: auto;
     display: block;
@@ -260,7 +260,7 @@ body{
 }
     
     #logoplin img {
-      
+        
         width: 50%; /* Edita el tamaño de la imagen adicional */
         height: auto;
         display: block;
@@ -273,7 +273,7 @@ body{
         height: auto;
         display: block;
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        margin-bottom: 90px;
+        margin-bottom: 40px;
        
     }
     #qr-container{

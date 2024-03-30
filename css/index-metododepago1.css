@@ -186,7 +186,8 @@ body{
 
 
 #logoPlin {
-    margin-right: 50px; /* Ajusta el margen derecho según sea necesario */
+    margin-left: 200px;
+   
     width: 30%; /* Edita el tamaño de la imagen adicional */
     height: auto;
     display: block;
@@ -195,7 +196,7 @@ body{
     
 }
 #logoYape {
-    margin-right: 50px; /* Ajusta el margen derecho según sea necesario */
+    margin-left: 200px;
     width: 30%; /* Edita el tamaño de la imagen derecha */
     height: auto;
     display: block;

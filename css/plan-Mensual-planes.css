@@ -71,8 +71,55 @@
 
 
 .additional-content {
-    display: none; /* Oculta el contenido adicional inicialmente */
+    display: none; /* Oculta el border: 2px solid blue; */
 }
+
+
+.nuevo-contenido {
+    width: 88%; /* Cambia el valor según tu preferencia */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 2px solid blue;
+    border-radius: 30px; /* Ajusta el valor según el radio de curvatura deseado */
+    display: flex;
+    flex-direction: column; /* Establece el contenido en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.title1 {
+    font-size: 30px;
+    margin-right: 1000px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos alineados a los extremos */
+    align-items: center;
+    width: 100%; /* Ajusta el ancho del contenedor */
+}
+
+.contenido p {
+    margin-top: 10px; /* Ajusta el margen entre el título y el texto */
+    margin-left: 20px;
+}
+
+.whatsapp-btn {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: -30px;
+    margin-right: 50px;
+}
+
+.whatsapp-btn i {
+    margin-left: 5px;
+}
+
 
 @media only screen and (max-width: 768px) {
     .titulo-plan {

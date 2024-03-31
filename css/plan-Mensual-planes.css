@@ -112,8 +112,15 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
+    box-shadow: 10px 6px 8px rgb(42, 42, 42); /* Agrega una sombra al botón */
+    transition: all 0.3s ease; /* Agrega transición para el efecto hover */
     margin-top: -30px;
     margin-right: 50px;
+    transform: scale(1);
+}
+.whatsapp-btn:hover {
+    background-color: #4CAF50; /* Cambia el color al hacer hover */
+    transform: scale(1.1); /* Agranda el botón al hacer hover */
 }
 
 .whatsapp-btn i {
@@ -137,6 +144,27 @@
         width: 100%; /* Para que ocupe todo el ancho disponible */
         margin-top: 10px; /* Ajusta el margen superior según tu diseño */
         margin-bottom: 30px;
+    }
+
+
+
+
+
+
+    .title1 {
+        font-size: 24px; /* Tamaño de fuente ajustado para dispositivos móviles */
+        margin-right: 0; /* Eliminar margen derecho en dispositivos móviles */
+        text-align: center; /* Centrar texto */
+    }
+
+    .contenido {
+        flex-direction: column; /* Contenido en columna para dispositivos móviles */
+        align-items: flex-start; /* Alinear elementos al inicio */
+    }
+
+    .whatsapp-btn {
+        margin-right: 0; /* Eliminar margen derecho en dispositivos móviles */
+        margin-top: 10px; /* Ajustar margen superior */
     }
 }
 

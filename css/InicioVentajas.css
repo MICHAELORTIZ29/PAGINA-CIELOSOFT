@@ -26,6 +26,28 @@
 }
 
 @media (max-width: 767.98px) {
+
+    .iconosventajas {
+        display: flex;
+        align-items: center;
+    }
+    
+    .icono {
+        margin-right: 4px; /* Ajusta el margen derecho entre los iconos */
+    }
+    
+    .segundo {
+        margin-left: 4px; /* Ajusta el margen izquierdo del segundo icono */
+    }
+    
+    .texto {
+        margin-left: 4px; /* Ajusta el margen izquierdo entre el icono y el texto */
+    }
+
+
+
+
+
     #ventajas .descripcion {
         text-align: justify;
         padding: 10px;
@@ -41,7 +63,7 @@
     }
 
     .iconosventajas{
-        font-size: 15px; 
+        font-size: 14px; 
         font-weight: bold;
     }
 }

@@ -20,18 +20,55 @@
     margin-bottom: 15px;
 
 }
-.iconosventajas{
+.iconosventajas {
     font-size: 17px; 
     font-weight: bold;
+    
+    
 }
 
-
-
-.custom-row-factura  .col-lg-3,
-.custom-row-factura  .col-md-4,
-.custom-row-factura  .col-sm-6 {
-    margin-bottom: -50px; /* Ajusta el valor según tus necesidades */
+.encabezado-cuadros h1{
+    font-size: 35px; 
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5px;
 }
+
+.container-fluid {
+    padding-top: 5px; /* Espacio arriba del contenedor */
+    padding-bottom: 20px; /* Espacio abajo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.custom-row-factura {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: -15px; /* Compensación para el espacio entre columnas */
+    margin-right: -15px; /* Compensación para el espacio entre columnas */
+}
+
+.custom-col {
+    margin-bottom: 20px; /* Espacio entre los contenedores */
+    flex-basis: calc((100% - 60px) / 3); /* Calcula el ancho de cada columna */
+    max-width: calc((100% - 60px) / 3); /* Ancho máximo de cada columna */
+    padding-left: 15px; /* Espacio a la izquierda de cada columna */
+    padding-right: 15px; /* Espacio a la derecha de cada columna */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+@media (max-width: 768px) {
+    .custom-col {
+        flex-basis: calc((100% - 40px) / 2); /* Ancho de cada columna en dispositivos pequeños */
+        max-width: calc((100% - 40px) / 2); /* Ancho máximo de cada columna en dispositivos pequeños */
+    }
+    .card-body .card-title h5{
+        font-size: 50px;
+
+    }
+}     
 
 
 .card {

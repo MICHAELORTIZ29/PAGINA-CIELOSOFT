@@ -9,15 +9,22 @@
 
 .content {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     margin-top: 20px; /* Espacio entre el título y el contenido */
+}
+.row.align-items-center {
+    display: flex;
+    flex-wrap: wrap; /* Agrega esta línea */
+    align-items: center;
 }
 
 .info-box {
     flex: 1;
     background-color: #f5f5f5; /* Color de fondo del contenedor */
     padding: 20px; /* Espaciado interno del contenedor */
+    max-width: 100px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
 .description {
@@ -27,7 +34,8 @@
 
 .image img {
     max-width: 100%;
-    height: auto; /* Ajusta el tamaño de la imagen */
+    max-height: 300px; /* Ajusta el alto máximo según sea necesario */
+    height: auto;
 }
 
 #mejores-equipos .title {
@@ -48,8 +56,7 @@
     font-size: 16px; /* Tamaño de fuente normal */
 }
 #mejores-equipos .info-box {
-    max-width: 600px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 .btn-info {
     background-color: #70b2f7; /* Color de fondo celeste */

@@ -1,4 +1,8 @@
 
+.slide-giros {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
 section .slide-giros {
 	display:flex;
 	flex-flow:column;
@@ -18,10 +22,12 @@ section .slide-giros {
 
 
 
+
 section .slide-giros {
 	margin:0 0 50px 0;
 	.no-marg { margin:0 0 0 0; }
 }
+
 
 div.highway-slider {
 	display:flex;
@@ -110,7 +116,7 @@ font-size: 50px;
 			animation:translatestf 30s linear infinite;
 			h4 { font-size:28px; }
 		}
-	}
+	} 
 }
 
 @keyframes translateinfinite {

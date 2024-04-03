@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
 #ventajas .descripcion {
     text-align: justify;
     padding: 20px;
@@ -27,96 +30,6 @@
     
 }
 
-.encabezado-cuadros h1{
-    font-size: 35px; 
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 5px;
-}
-
-.container-fluid {
-    padding-top: 5px; /* Espacio arriba del contenedor */
-    padding-bottom: 10px; /* Espacio abajo del contenedor */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    max-width: 1200px; /* Ancho máximo del contenedor */
-}
-
-.custom-row-factura {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-left: -15px; /* Compensación para el espacio entre columnas */
-    margin-right: -15px; /* Compensación para el espacio entre columnas */
-}
-
-.custom-col {
-    margin-bottom: 10px; /* Espacio entre los contenedores */
-    flex-basis: calc((100% - 60px) / 3); /* Calcula el ancho de cada columna */
-    max-width: calc((100% - 60px) / 3); /* Ancho máximo de cada columna */
-    padding-left: 15px; /* Espacio a la izquierda de cada columna */
-    padding-right: 15px; /* Espacio a la derecha de cada columna */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-}
-.card-title {
-    
-    font-weight: bold;
-}
-
-@media (max-width: 799px) {
-    .custom-row-factura {
-        flex-direction: column; /* Cambia la dirección a columna en dispositivos pequeños */
-        align-items: center; /* Centra los elementos en dispositivos pequeños */
-    }
-
-    .custom-col {
-        flex-basis: 10%; /* Ancho completo para cada columna en dispositivos pequeños */
-        max-width: 90%; /* Ancho máximo completo para cada columna en dispositivos pequeños */
-        margin-bottom: 20px; /* Espacio entre los contenedores en dispositivos pequeños */
-        margin-top: 10px;
-    }
-    
-    .card-title {
-        font-size: 15px; /* Tamaño del título en píxeles */
-        font-weight: bold;
-    }
-    
-    
-    .card-text {
-        font-size: 15px; /* Tamaño del texto en píxeles */
-    }
-
-    .encabezado-cuadros h1{
-        font-size: 20px;
-
-    
-    }
-}     
-
-
-.card {
-    border-radius: 15px;
-    border: none;
-}
-
-.card-title {
-    color: black;
-}
-
-.card-text {
-    color: black;
-}
-
-.shadow-lg {
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
-}
-.custom-row {
-    margin-bottom: -80px; /* Ajusta el valor según la separación deseada */
-}
-
-.custom-col {
-    margin-bottom: 80px; /* Ajusta el valor según la separación deseada */
-}
 
 
 

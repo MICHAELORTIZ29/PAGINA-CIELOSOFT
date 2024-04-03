@@ -1,57 +1,87 @@
-#iconos .icon-container {
-    background-color: #e0e0e0; /* Color de fondo gris */
-    border-radius: 10px; /* Borde con esquinas redondeadas */
-    padding: 20px; /* Espacio interno */
-    margin-bottom: 20px; /* Margen inferior */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el contenedor */
-    position: relative; /* Posición relativa para que la descripción sea relativa a este contenedor */
-    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+.encabezado-cuadros h1{
+    font-size: 35px; 
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5px;
 }
 
-#iconos .icon-container:hover,
-#iconos .icon-container.active {
-    background-color: #007bff; /* Cambiar el color de fondo al pasar el cursor o hacer clic */
-    color: #fff; /* Cambiar el color del texto al pasar el cursor o hacer clic */
+.container-fluid {
+    padding-top: 5px; /* Espacio arriba del contenedor */
+    padding-bottom: 10px; /* Espacio abajo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
-#iconos .icon-container .description {
-    display: none; /* Ocultar la descripción por defecto */
-    position: absolute; /* Posición absoluta para controlar la ubicación de la descripción */
-    top: 100%; /* Posicionar la descripción debajo del contenedor */
-    left: 50%; /* Posicionar la descripción en el centro horizontal */
-    transform: translateX(-50%); /* Centrar horizontalmente la descripción */
-    width: 80%; /* Ancho de la descripción */
-    max-width: 200px; /* Ancho máximo de la descripción */
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    padding: 5px 10px; /* Espaciado interno */
-    font-size: 14px; /* Tamaño de fuente */
-    border-radius: 5px; /* Borde redondeado */
-    z-index: 1; /* Colocar la descripción sobre el contenedor */
+.custom-row-factura {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: -15px; /* Compensación para el espacio entre columnas */
+    margin-right: -15px; /* Compensación para el espacio entre columnas */
 }
 
-#iconos .icon-container:hover .description {
-    display: block; /* Mostrar la descripción cuando el cursor pasa por encima del contenedor */
+.custom-col {
+    margin-bottom: 10px; /* Espacio entre los contenedores */
+    flex-basis: calc((100% - 30px) / 3); /* Ajusta el ancho de las columnas */
+    max-width: calc((100% - 30px) / 3); /* Ancho máximo de las columnas */
+    padding: 0 15px; /* Espacio a los lados de cada columna */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+.card-title {
+    
+    font-weight: bold;
 }
 
-@media (max-width: 767.98px) {
-    /* Estilos para dispositivos móviles */
-    #iconos .icon-container {
-        width: calc(60% - 1px); /* Ajustar el ancho de los contenedores al 40% del ancho de la pantalla menos el espacio entre ellos */
-        margin: 10px auto; /* Centrar horizontalmente los contenedores y ajustar el margen vertical */
+@media (max-width: 799px) {
+    body {
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+    .custom-row-factura {
+        flex-direction: column; /* Cambia la dirección a columna en dispositivos pequeños */
+        align-items: center; /* Centra los elementos en dispositivos pequeños */
     }
 
-    #iconos .row.text-center {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    .custom-col {
+        flex-basis: 100%; /* Ancho completo para cada columna en dispositivos pequeños */
+        max-width: 100%; /* Ancho máximo completo para cada columna en dispositivos pequeños */
+        margin-bottom: 10px;
+      
+        margin-top: 10px;
     }
+    
+    .card-title {
+        font-size: 15px; /* Tamaño del título en píxeles */
+        font-weight: bold;
+    }
+    
+    
+    .card-text {
+        font-size: 15px; /* Tamaño del texto en píxeles */
+    }
+
+    .encabezado-cuadros h1{
+        font-size: 20px;
+
+    
+    }
+}     
+
+
+.card {
+    border-radius: 15px;
+    border: none;
 }
 
-@media (min-width: 768px) {
-    /* Estilos para pantallas de computadora */
-    #iconos .icon-container {
-        width: calc(50% - 20px); /* Ajustar el ancho de los contenedores al 50% del ancho de la pantalla menos el espacio entre ellos */
-        margin: 10px auto; /* Centrar horizontalmente los contenedores y ajustar el margen vertical */
-    }
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: black;
+}
+
+.shadow-lg {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
 }

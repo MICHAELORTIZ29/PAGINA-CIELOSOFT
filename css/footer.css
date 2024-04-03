@@ -52,3 +52,25 @@
 .footer-bg ul li a:focus {
     color: #dfe0f6; /* Cambia el color al pasar el cursor o hacer clic */
 }
+
+.image-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea las imágenes al inicio del contenedor */
+    align-items: center; /* Centra verticalmente las imágenes */
+}
+
+.img1 {
+    width: 200px; /* Ancho deseado para la primera imagen */
+    margin-right: -130px; /* Espacio entre la primera y la segunda imagen (ajustable) */
+    margin-bottom: 16px;
+}
+
+.img2 {
+    width: 400px; /* Ancho deseado para la segunda imagen */
+    margin-left: 20px; /* Espacio entre la segunda y la primera imagen (ajustable) */
+    margin-top: 0; /* Elimina cualquier margen superior */
+}
+
+.copyright-text {
+    margin-bottom: 30px; /* Ajusta el margen inferior según lo desees */
+}

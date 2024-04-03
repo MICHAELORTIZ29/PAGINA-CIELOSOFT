@@ -1,4 +1,6 @@
-
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
 .navbar {
     background-color: white!important;
     z-index: 1000; 

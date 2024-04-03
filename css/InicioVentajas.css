@@ -71,7 +71,7 @@
 
     .custom-col {
         flex-basis: 10%; /* Ancho completo para cada columna en dispositivos pequeños */
-        max-width: 95%; /* Ancho máximo completo para cada columna en dispositivos pequeños */
+        max-width: 90%; /* Ancho máximo completo para cada columna en dispositivos pequeños */
         margin-bottom: 20px; /* Espacio entre los contenedores en dispositivos pequeños */
         margin-top: 10px;
     }

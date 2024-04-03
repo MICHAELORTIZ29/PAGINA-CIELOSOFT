@@ -25,6 +25,42 @@
     font-weight: bold;
 }
 
+
+
+.custom-row-factura  .col-lg-3,
+.custom-row-factura  .col-md-4,
+.custom-row-factura  .col-sm-6 {
+    margin-bottom: -50px; /* Ajusta el valor según tus necesidades */
+}
+
+
+.card {
+    border-radius: 15px;
+    border: none;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-text {
+    color: black;
+}
+
+.shadow-lg {
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+}
+.custom-row {
+    margin-bottom: -80px; /* Ajusta el valor según la separación deseada */
+}
+
+.custom-col {
+    margin-bottom: 80px; /* Ajusta el valor según la separación deseada */
+}
+
+
+
+
 @media (max-width: 767.98px) {
 
     .iconosventajas {

@@ -33,7 +33,9 @@
     
     font-weight: bold;
 }
-
+.busqueda{
+    width: 60px;
+}
 @media (max-width: 799px) {
     body {
         overflow-x: hidden; /* Evita el desplazamiento horizontal */
@@ -45,7 +47,7 @@
 
     .custom-col {
         flex-basis: 100%; /* Ancho completo para cada columna en dispositivos pequeños */
-        max-width: 100%; /* Ancho máximo completo para cada columna en dispositivos pequeños */
+        max-width: 90%; /* Ancho máximo completo para cada columna en dispositivos pequeños */
         margin-bottom: 10px;
       
         margin-top: 10px;

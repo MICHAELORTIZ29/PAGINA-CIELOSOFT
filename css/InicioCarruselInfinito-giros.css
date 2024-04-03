@@ -178,11 +178,22 @@ font-size: 50px;
 	}
 }
 .highway-car img {
-    width: 100%; /* Ancho del 100% para que las imágenes ocupen todo el espacio disponible */
+    width: 10px; /* Ancho del 100% para que las imágenes ocupen todo el espacio disponible */
     height: auto; /* Altura automática para mantener la proporción */
     object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
     padding: 5px; /* Espacio alrededor de la imagen */
 }
-
+.highway-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.highway-car .iconos-color {
+    width: 80px; /* Ancho deseado para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+	padding: 5px; /* Espacio alrededor de la imagen */
+	object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+}
 
 

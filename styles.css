@@ -1,12 +1,14 @@
 body {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
+
 .main-container {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 .navbar {
     background-color: white!important;
     z-index: 1000; 
+   
 }
 .navbar-nav .nav-item .nav-link {
     border-top: 0.5px solid #060606; /* Línea arriba de cada enlace */

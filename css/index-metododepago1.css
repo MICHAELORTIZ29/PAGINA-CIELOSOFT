@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Exo:400,700'); */
 
 *{
     margin: 0px;
@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: 'Exo', sans-serif;
+    
     
 }
 
@@ -19,7 +19,7 @@ body{
 
 
 .area {
-    background: #abaff2;
+    background: #f9fafa;
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
     width: 90%;
     min-height: 60vh;
@@ -51,7 +51,7 @@ body{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(1, 37, 74, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
 }
@@ -148,6 +148,7 @@ body{
     position: relative;
     z-index: 1; /* Asegurar que el contenido esté delante del fondo animado */
     color: #fff; /* Color de texto blanco */
+   
 }
 
 @keyframes animate {
@@ -165,10 +166,12 @@ body{
 
 /* --------------------------------------------- */
 #titulo1{
+    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
     text-align: center;
-    color: #fff;
+    color: #1a1919;
     font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambia el tipo de letra */
     margin-top: 40px; /* Ajusta el espacio superior */
     line-height: 1.5; /* Ajusta el espacio entre líneas */
     
@@ -238,7 +241,7 @@ body{
 @media (max-width: 900px) {
 
     .area {
-        background: #abaff2;
+        background: #f9fafa;
         background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
         width: 90%;
         min-height: 60vh;
@@ -273,7 +276,7 @@ body{
         height: auto;
         display: block;
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        margin-bottom: 40px;
+        margin-bottom: 60px;
        
     }
     #qr-container{

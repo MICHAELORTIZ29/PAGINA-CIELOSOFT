@@ -165,12 +165,34 @@ body {
     margin-left: 5px;
 }
 
+#gracias{
+    margin-top: 20px;
+}
+
 /* Responsive. */
 @media (max-width: 900px) {
     body {
         font-size: 75%;
     }
 }
+
+.title1 {
+    font-size: 24px; /* Tamaño de fuente ajustado para dispositivos móviles */
+    margin-right: 0; /* Eliminar margen derecho en dispositivos móviles */
+    text-align: center; /* Centrar texto */
+}
+
+.contenido {
+    flex-direction: column; /* Contenido en columna para dispositivos móviles */
+    align-items: flex-start; /* Alinear elementos al inicio */
+}
+
+.whatsapp-btn {
+    margin-right: 0; /* Eliminar margen derecho en dispositivos móviles */
+    margin-top: 10px; /* Ajustar margen superior */
+}
+
+
 
 .espacio-derecha {
     margin-right: 25px; /* Ajusta el valor según el espacio de separación que desees */

@@ -172,8 +172,9 @@ body{
     text-align: center;
     color: #1a1919;
     font-size: 50px;
-    margin-top: 40px; /* Ajusta el espacio superior */
+    margin-top: 60px; /* Ajusta el espacio superior */
     line-height: 1.5; /* Ajusta el espacio entre líneas */
+    margin-bottom: 0px;
     
 }
 
@@ -204,7 +205,7 @@ body{
     height: auto;
     display: block;
     margin-bottom: 10px;
-    margin-top: 15px; /* Ajusta el espacio superior */
+    margin-top: 0px; /* Ajusta el espacio superior */
    
 }
 #qrPlin {

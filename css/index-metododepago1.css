@@ -174,66 +174,51 @@ body{
     font-size: 50px;
     margin-top: 60px; /* Ajusta el espacio superior */
     line-height: 1.5; /* Ajusta el espacio entre líneas */
-    margin-bottom: 0px;
     
 }
 
 
-
-
-#yape,
-#plin {
-    display: flex;
-    justify-content: flex-start; /* Alinea los elementos a la izquierda */
-    align-items: center; /* Centra verticalmente los elementos */
+/* Estilo para el título */
+#titulo1 {
+    font-weight: bold;
 }
 
-
-#logoPlin {
-    /* margin-left: 200px; */
+/* Estilo para el contenedor de Yape */
+.yape {
    
-    width: 30%; /* Edita el tamaño de la imagen adicional */
-    height: auto;
-    display: block;
-    margin-top: 40px; /* Ajusta el espacio superior */
-    margin-bottom: 20px;
-    
+    text-align: center; /* Centra el contenido horizontalmente */
+    width: 150px; /* Ancho deseado */
+    height: auto
 }
-#logoYape {
-    /* margin-left: 200px; */
-    width: 30%; /* Edita el tamaño de la imagen derecha */
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-    margin-top: 0px; /* Ajusta el espacio superior */
-   
-}
-#qrPlin {
-    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
-    width: 30%; /* Edita el tamaño de la imagen adicional */
-    height: auto;
-    display: block;
-    margin-top: 50px; /* Ajusta el espacio superior */
-    margin-bottom: 20px;
-    
-}
-#qrYape {
-    margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
-    width: 30%; /* Edita el tamaño de la imagen derecha */
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-    margin-top: 35px; /* Ajusta el espacio superior */
-   
+.yape img{
+    margin-left: 80px;
 }
 
-#yape .qr-container h6,
-#plin .qr-container h6,
-#yape .qr-container p,
-#plin .qr-container p {
-    margin: 0; /* Elimina el margen predeterminado */
-    align-items: center;
+/* Estilo para el contenedor de Plin */
+.plin {
+    text-align: center; /* Centra el contenido horizontalmente */
+    width: 150px; /* Ancho deseado */
+    height: auto
+
 }
+
+/* Estilo para el contenedor de tarjetas */
+.tarjetas {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para el espacio entre las imágenes */
+.mb-3 {
+    margin-bottom: 1.5rem; /* Espacio entre las imágenes */
+}
+
+
+
+
+
+
+
+
 .boton-container{
     display: none;
 }
@@ -255,34 +240,15 @@ body{
         margin-bottom: 20px; /* Espacio inferior entre el título y la imagen */
         font-size: 20px; /* Tamaño del título */
     }
-    #yape,
-    #plin {
-    display: flex;
-    justify-content: center; /* Alinea los elementos a la izquierda */
-    align-items: center; /* Centra verticalmente los elementos */
-  
-}
+
     
-    #logoplin img {
-        
-        width: 50%; /* Edita el tamaño de la imagen adicional */
-        height: auto;
-        display: block;
-        margin: 0 auto; /* Centra la imagen horizontalmente */
-        margin-bottom: 1px;
-    }
-    #logoyape img {
-        
-        width: 90px; /* Edita el tamaño de la imagen derecha */
-        height: auto;
-        display: block;
-        margin: 0 auto; /* Centra la imagen horizontalmente */
-        margin-bottom: 60px;
-       
-    }
-    #qr-container{
-        display: none;
-    }
+
+
+
+
+
+
+
 
     .boton-container { 
     display: flex;

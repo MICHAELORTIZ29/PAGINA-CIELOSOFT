@@ -127,7 +127,45 @@
     margin-left: 5px;
 }
 
+.ribbon-container {
+    position: relative; /* Posición relativa para el contenedor de la cinta */
+    overflow: hidden; /* Oculta el contenido que sobrepase el tamaño del contenedor */
+    
+    border: 2px solid #007bff; /* Borde azul para simular el corte */
+}
 
+.ribbon {
+    position: absolute;
+    top: 30px; /* Ajusta la posición vertical para que se vea más grande */
+    right: -40px; /* Ajusta la posición horizontal */
+    padding: 8px 35px; /* Ajusta el espaciado interno para que la cinta sea más grande */
+    background-color: red;
+    color: white;
+    transform: rotate(45deg);
+    font-size: 16px; /* Incrementa el tamaño de fuente para hacer la cinta más grande */
+    line-height: 1.2;
+    z-index: 1;
+    
+}
+.ribbon-container:hover{
+background-color: #f3f709;
+transform: scale(1.1);
+}
+
+.btn {
+    margin-right: 10px; /* Espacio entre los botones */
+    border: 2px solid #0379f7; /* Borde del botón celeste */
+    color: #070707; /* Color del texto */
+    background-color: #55a4f8;; /* Fondo celeste */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  }
+  
+  .btn:hover {
+    background-color: #046bd9; /* Fondo celeste */
+    color: white; /* Texto blanco */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al pasar el ratón */
+  }
 @media only screen and (max-width: 768px) {
     .titulo-plan {
         font-size: 28px; /* Reducir el tamaño de la fuente en pantallas más pequeñas */

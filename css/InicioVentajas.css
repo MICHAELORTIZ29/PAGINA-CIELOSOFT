@@ -1,6 +1,11 @@
 body {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
+
+
+.cuadrito{
+    border: 2px solid #007bff;
+}
 #ventajas .descripcion {
     text-align: justify;
     padding: 20px;
@@ -11,12 +16,13 @@ body {
 }
 
 .tit1 h2{
-    font-size: 50px; 
+    font-size: 3rem;
     font-weight: bold;
 }
 
-.segundo {
-    margin-left: 50px;
+
+.primero ,.segundo, .tercero{
+    filter: drop-shadow(0px 0px 5px rgb(95, 95, 95));
 }
 .iconosventajas {
     margin-top: 15px;
@@ -28,6 +34,9 @@ body {
     font-weight: bold;
     
     
+}
+.span-con-sombra {
+    text-shadow: 1px 1px 5px rgba(80, 80, 80, 0.5); /* Sombra suave con desplazamiento horizontal de 1px y vertical de 1px */
 }
 
 
@@ -46,7 +55,10 @@ body {
     }
     
     .segundo {
-        margin-left: 4px; /* Ajusta el margen izquierdo del segundo icono */
+        margin-left: 1px; /* Ajusta el margen izquierdo del segundo icono */
+    }
+    .tercero{
+        margin-left: 1px;
     }
     
     .texto {
@@ -65,7 +77,7 @@ body {
     }
 
     .tit1 h2{
-        font-size: 25px; 
+        font-size: 1.6rem; 
         font-weight: bold;
     }
 
@@ -78,7 +90,10 @@ body {
     position: absolute;
     bottom: 10px; /* Ajusta la posición vertical según sea necesario */
     left: 10px; /* Ajusta la posición horizontal según sea necesario */
-    background-color: #0095cd; /* Color verde */
+    background-color: #70b2f7;; /* Color verde */
+    
     padding: 5px 10px; /* Ajusta el relleno según sea necesario */
     border-radius: 5px; /* Borde redondeado */
+    
 }
+

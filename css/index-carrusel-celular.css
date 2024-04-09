@@ -26,7 +26,8 @@
   }
 
   .detail p {
-	color: #aaa;
+	color: #090909;
+	font-size: 1rem;
   }
 
   .detail .carousel-control {

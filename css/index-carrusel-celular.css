@@ -79,7 +79,8 @@
 	height: 5px;
 	border: none;
 	border-radius: 0px;
-	background: #007bff;;
+	background: #7bb5f3;;
+	border: 1px solid #03356a;
 	text-indent: -999px;
 	cursor: pointer;
   }

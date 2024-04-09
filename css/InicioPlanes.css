@@ -1,8 +1,32 @@
 .plan-container {
-    background-color: #e0e0e0; /* Color gris */
-    border-radius: 10px; /* Borde con esquinas redondeadas */
-    padding: 10px; /* Espacio interno reducido */
-    margin-bottom: 20px; /* Margen inferior */
+  position: relative; /* Para que la cinta sea relativa al contenedor */
+  overflow: hidden; /* Para ocultar parte de la cinta que esté fuera del contenedor */
+  background-color: #e0e0e0; /* Color gris del contenedor */
+  border-radius: 10px; /* Borde con esquinas redondeadas */
+  padding: 10px; /* Espacio interno reducido */
+  margin-bottom: 20px; /* Margen inferior */
+  transition: all 0.3s ease; /* Transición suave en hover */
+}
+
+/* Estilos para la cinta "POPULAR" */
+.plan-container::before {
+  content: "POPULAR"; /* Texto de la cinta */
+  position: absolute;
+  top: 20px; /* Ajuste vertical para centrar el texto */
+  right: -33px; /* Distancia desde la esquina superior derecha */
+  background-color: #ff0000; /* Color de fondo de la cinta (rojo en este ejemplo) */
+  color: #ffffff; /* Color del texto */
+  padding: 5px 35px; /* Espaciado interno de la cinta */
+  transform: rotate(45deg); /* Rotar la cinta */
+  z-index: 1; /* Para que la cinta esté sobre el contenido del contenedor */
+}
+
+/* Estilos en hover */
+.plan-container:hover {
+  border-radius: 10px;
+  border: 3px solid rgb(74, 74, 74); /* Borde al pasar el ratón */
+  background-color: rgb(223, 236, 241); /* Color de fondo en hover */
+  transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
 }
 @keyframes slide-in-from-left {
   0% {
@@ -16,5 +40,33 @@
 }
 
 .plan-container {
-  animation: slide-in-from-left 4s ease-out forwards; /* Aplicar la animación */
+  animation: slide-in-from-left 3s ease-out forwards; /* Aplicar la animación */
 }
+
+.buttons {
+  margin-top: 20px; /* Espacio superior */
+}
+
+.btn {
+  margin-right: 10px; /* Espacio entre los botones */
+  border: 2px solid #0379f7; /* Borde del botón celeste */
+  color: #7bb5f3; /* Color del texto */
+  background-color: #55a4f8;; /* Fondo celeste */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave */
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+.btn:hover {
+  background-color: #046bd9; /* Fondo celeste */
+  color: white; /* Texto blanco */
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al pasar el ratón */
+}
+
+
+
+
+#facturacion-electronica h2 span {
+  color: #007bff; /* Color celeste */
+}
+
+

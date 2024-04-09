@@ -24,7 +24,7 @@
 
 .info-box {
     flex: 1;
-    background-color: #f5f5f5; /* Color de fondo del contenedor */
+    background-color: #101010; /* Color de fondo del contenedor */
     padding: 20px; /* Espaciado interno del contenedor */
     max-width: 100px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -61,16 +61,24 @@
 #mejores-equipos .info-box {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
-.btn-info {
-    background-color: #70b2f7; /* Color de fondo celeste */
-    color: #fff; /* Color del texto blanco */
-    border-color: #007bff; /* Color del borde igual al fondo */
-}
-
-.btn-info:hover {
-    background-color: #0056b3; /* Cambia el color de fondo al pasar el cursor */
-    border-color: #0056b3; /* Cambia el color del borde al pasar el cursor */
-}
+.btn {
+    margin-right: 10px; /* Espacio entre los botones */
+    border: 2px solid #0379f7; /* Borde del botón celeste */
+    color: #070707; /* Color del texto */
+    background-color: #55a4f8;; /* Fondo celeste */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  }
+  
+  .btn:hover {
+    background-color: #046bd9; /* Fondo celeste */
+    color: white; /* Texto blanco */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al pasar el ratón */
+  }
+  
+  #imgImpresora  {
+    filter: drop-shadow(0px 0px 5px rgb(62, 62, 62));
+  }
 
  /* Estilos para la animación de entrada */
  @keyframes fadeInFromLeft {

@@ -22,11 +22,13 @@
     color: #7bb5f3; /* Color del texto */
     background-color: transparent; /* Fondo transparente */
     transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
 .buttons .btn:hover {
     background-color: #007bff; /* Fondo celeste */
     color: white; /* Texto blanco */
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2); /* Aumentar la sombra al pasar el ratón */
 }
 
 
@@ -62,3 +64,13 @@
     animation: slideIn 3s ease-out; /* Duración de 1 segundo con aceleración suave */
   }
   
+  #facturacion-electronica h2 {
+    font-weight: bold; /* Texto en negrita */
+    color: black; /* Color negro */
+    text-shadow: 15px 3px 15px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+}
+
+#facturacion-electronica p {
+    color: black; /* Color negro */
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); /* Sombra de texto */
+}

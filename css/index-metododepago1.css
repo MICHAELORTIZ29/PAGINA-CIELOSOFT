@@ -167,7 +167,7 @@ body{
 /* --------------------------------------------- */
 #titulo1{
     
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font
     font-weight: bold;
     text-align: center;
     color: #1a1919;
@@ -179,8 +179,9 @@ body{
 
 
 /* Estilo para el título */
-#titulo1 {
+#titulo1 h1{
     font-weight: bold;
+    font-size: 3rem;
 }
 
 /* Estilo para el contenedor de Yape */
@@ -193,18 +194,22 @@ body{
 .yape img{
     margin-left: 80px;
 }
+.plin img{
+    margin-left: 80px;
+}
 
 /* Estilo para el contenedor de Plin */
 .plin {
     text-align: center; /* Centra el contenido horizontalmente */
     width: 150px; /* Ancho deseado */
     height: auto
-
 }
-
 /* Estilo para el contenedor de tarjetas */
 .tarjetas {
+    margin-left: -95px;
     text-align: center; /* Centra el contenido horizontalmente */
+    width: 500px; /* Ancho deseado */
+    height: auto
 }
 
 /* Estilo para el espacio entre las imágenes */
@@ -238,10 +243,21 @@ body{
     #titulo1 h1 {
         text-align: center; /* Centra el título horizontalmente */
         margin-bottom: 20px; /* Espacio inferior entre el título y la imagen */
-        font-size: 20px; /* Tamaño del título */
+        font-size: 2rem; /* Tamaño del título */
     }
 
-    
+    .plin {
+        text-align: center; /* Centra el contenido horizontalmente */
+        width: 150px; /* Ancho deseado */
+        height: auto
+    }
+    .tarjetas {
+
+        margin-left: -45px;
+        text-align: center; /* Centra el contenido horizontalmente */
+        width: 400px; /* Ancho deseado */
+        height: auto
+    }
 
 
 

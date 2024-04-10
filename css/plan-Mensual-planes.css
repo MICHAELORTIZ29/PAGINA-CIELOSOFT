@@ -147,9 +147,14 @@
     z-index: 1;
     
 }
-.ribbon-container:hover{
-background-color: #70b2f7;
-transform: scale(1.1);
+.additional-content p{
+    text-shadow: 1px 1px 15px rgba(80, 80, 80, 0.5); 
+}
+@media (min-width: 990px) {
+    .ribbon-container:hover {
+        background-color: #70b2f7;
+        /* Otros estilos hover para pantallas grandes */
+    }
 }
 
 .btn {

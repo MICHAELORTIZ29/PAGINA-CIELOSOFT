@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0; /* Agregamos padding 0 para evitar desbordamientos */
+}
+
+
+.contenedor-arriba {
+    background-color: rgb(245, 153, 3);
+    text-align: center;
+    padding: 1px; /* Ajusta según sea necesario */
+}
+
+.contenedor-general {
+    background-color: rgb(14, 14, 14);
+   
+   
+}
+
+.texto h2,p{
+    margin-top: 10PX;
+    color:white;
+    text-align: center;
+}
+.texto h2{
+    font-size: 2rem;
+}
+.primero{
+    font-size: 1.5rem;
+}
+.video {
+    position: relative; /* Establece posición relativa para el contenedor */
+    padding-bottom: 56.25%; /* Proporción 16:9 para el video (9 / 16 * 100) */
+    overflow: hidden; /* Oculta cualquier contenido adicional */
+    margin-bottom: 10px; /* Espacio inferior */
+    margin-top: 50px;
+}
+
+.video iframe {
+    position: absolute; /* Establece posición absoluta para el video */
+    top: 0; /* Desde la parte superior */
+    left: 0; /* Desde la parte izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    border: none; /* Quita el borde del iframe */
+}
+
+
+.boton-whatsapp {
+    display: inline-block;
+    background-color: #25D366; /* Color de fondo del botón de WhatsApp */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita subrayado del texto */
+    text-align: center;
+}
+
+.boton-whatsapp i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.boton-whatsapp:hover {
+    background-color: #128C7E; /* Cambia color de fondo al pasar el mouse */
+}
+.text-center img {
+    width: 250px; /* Tamaño deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .boton-whatsapp {
+        display: block; /* Cambia a bloque para ocupar el ancho completo */
+        text-align: center; /* Centra el texto */
+    }
+}
+@media (max-width: 767px) {
+    .col-md-6.order-md-2 {
+        order: 1; /* Cambia el orden del contenido en dispositivos móviles */
+    }
+
+    .col-md-6.order-md-1 {
+        order: 2; /* Cambia el orden del contenido en dispositivos móviles */
+    }
+
+    .boton-whatsapp {
+        display: block; /* Cambia a bloque para ocupar el ancho completo */
+        text-align: center; /* Centra el texto */
+    }
+}

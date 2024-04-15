@@ -24,6 +24,11 @@
 .imagen-contenedor img {
     max-width: 100%; /* Asegura que la imagen no sobrepase el contenedor */
     border-radius: 10px; /* Bordes ovalados para la imagen */
+    
+}
+
+.rounded{
+    filter: drop-shadow(20px 20px 25px rgb(62, 62, 62));
 }
 
 /* Estilos para el título del servicio */

@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0; /* Agregamos padding 0 para evitar desbordamientos */
+    overflow-x: hidden;
 }
 
 
@@ -12,6 +13,7 @@ body {
 
 .contenedor-general {
     background-color: rgb(14, 14, 14);
+    overflow-x: hidden;
    
    
 }
@@ -20,6 +22,11 @@ body {
     margin-top: 10PX;
     color:white;
     text-align: center;
+    
+}
+
+.titulo{
+    text-shadow: 4px 4px 10px rgba(239, 235, 235, 0.3); /* Sombra de texto */
 }
 .texto h2{
     font-size: 2rem;
@@ -33,7 +40,7 @@ body {
     overflow: hidden; /* Oculta cualquier contenido adicional */
     margin-bottom: 10px; /* Espacio inferior */
     margin-top: 50px;
-    margin-left: 20px;
+    
 }
 
 .video iframe {
@@ -67,6 +74,7 @@ body {
     width: 250px; /* Tamaño deseado */
     height: auto; /* Altura automática para mantener la proporción */
     margin-top: 10px; /* Espacio superior */
+    
 }
 
 

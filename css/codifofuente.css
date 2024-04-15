@@ -7,7 +7,7 @@ body {
 .contenedor-arriba {
     background-color: rgb(245, 153, 3);
     text-align: center;
-    padding: 1px; /* Ajusta según sea necesario */
+    padding: 0.5px; /* Ajusta según sea necesario */
 }
 
 .contenedor-general {
@@ -33,6 +33,7 @@ body {
     overflow: hidden; /* Oculta cualquier contenido adicional */
     margin-bottom: 10px; /* Espacio inferior */
     margin-top: 50px;
+    margin-left: 20px;
 }
 
 .video iframe {
@@ -68,6 +69,60 @@ body {
     margin-top: 10px; /* Espacio superior */
 }
 
+
+
+.nuevo-contenido {
+    width: 88%; /* Cambia el valor según tu preferencia */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: transparent;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 2px solid blue;
+    border-radius: 30px; /* Ajusta el valor según el radio de curvatura deseado */
+    display: flex;
+    flex-direction: column; /* Establece el contenido en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.title1 {
+    font-size: 30px;
+    margin-right: 1000px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos alineados a los extremos */
+    align-items: center;
+    width: 100%; /* Ajusta el ancho del contenedor */
+}
+
+.contenido p {
+    margin-top: 10px; /* Ajusta el margen entre el título y el texto */
+    margin-left: 20px;
+}
+
+.whatsapp-btn {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 10px 6px 8px rgb(42, 42, 42); /* Agrega una sombra al botón */
+    transition: all 0.3s ease; /* Agrega transición para el efecto hover */
+    margin-top: -30px;
+    margin-right: 50px;
+    transform: scale(1);
+}
+.whatsapp-btn:hover {
+    background-color: #4CAF50; /* Cambia el color al hacer hover */
+    transform: scale(1.1); /* Agranda el botón al hacer hover */
+}
+
+.whatsapp-btn i {
+    margin-left: 5px;
+}
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 767px) {
     .boton-whatsapp {
@@ -87,5 +142,23 @@ body {
     .boton-whatsapp {
         display: block; /* Cambia a bloque para ocupar el ancho completo */
         text-align: center; /* Centra el texto */
+    }
+}
+@media only screen and (max-width: 768px) {
+
+    .title1 {
+        font-size: 24px; /* Tamaño de fuente ajustado para dispositivos móviles */
+        margin-right: 0; /* Eliminar margen derecho en dispositivos móviles */
+        text-align: center; /* Centrar texto */
+    }
+
+    .contenido {
+        flex-direction: column; /* Contenido en columna para dispositivos móviles */
+        align-items: flex-start; /* Alinear elementos al inicio */
+    }
+
+    .whatsapp-btn {
+        margin-right: 0; /* Eliminar margen derecho en dispositivos móviles */
+        margin-top: 10px; /* Ajustar margen superior */
     }
 }

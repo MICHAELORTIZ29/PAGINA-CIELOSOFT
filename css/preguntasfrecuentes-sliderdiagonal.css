@@ -113,6 +113,7 @@ body {
 }
 
 
+
 .nuevo-contenido {
     width: 88%; /* Cambia el valor según tu preferencia */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -129,7 +130,7 @@ body {
 
 .title1 {
     font-size: 30px;
-    margin-right: -2000px;
+    margin-right: 1000px;
 }
 
 .contenido {

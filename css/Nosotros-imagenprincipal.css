@@ -28,3 +28,26 @@
     display: block; /* Hacer que el botón sea un bloque */
     margin: 0 auto; /* Centrar el botón horizontalmente */
 }
+.about-section .text {
+    background-color: #3a4a5a; /* Fondo de color naranja para el texto */
+    padding: 20px; /* Agregar espaciado al texto */
+    border-radius: 10px; /* Bordes redondeados para el texto */
+    margin-top: 20px; /* Espaciado superior al texto */
+}
+
+.text h2,p{
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-section .image {
+        display: none; /* Ocultar la imagen en dispositivos móviles */
+    }
+
+    .about-section .text {
+        background-color: #3a4a5a; /* Fondo de color naranja para el texto */
+        padding: 20px; /* Agregar espaciado al texto */
+        border-radius: 10px; /* Bordes redondeados para el texto */
+        margin-top: 20px; /* Espaciado superior al texto */
+    }
+}

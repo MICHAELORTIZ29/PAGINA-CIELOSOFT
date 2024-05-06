@@ -5,6 +5,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 5px;
     margin-top: 50px;
+    z-index: 900;
 }
 
 .container-fluid {

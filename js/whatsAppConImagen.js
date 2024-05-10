@@ -1,6 +1,6 @@
 function enviarWhatsApp() {
     // Número de WhatsApp al que se enviará el mensaje (incluyendo el código de país)
-    var numero = '917374145'; // Reemplaza con tu número de WhatsApp
+    var numero = '984599871'; // Reemplaza con tu número de WhatsApp
 
     // Mensaje que se enviará
     var mensaje = '¡Hola! Este es un mensaje de prueba desde mi sitio web.';

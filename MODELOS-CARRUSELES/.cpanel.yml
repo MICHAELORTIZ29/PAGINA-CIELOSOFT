@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cielosof/public_html/
+    - /bin/cp -R PAGINA-CIELOSOFT $DEPLOYPATH

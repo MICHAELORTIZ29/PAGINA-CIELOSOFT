@@ -11,8 +11,8 @@ body {
    
 }
 .navbar-nav .nav-item .nav-link {
-    border-top: 0.5px solid #060606; /* Línea arriba de cada enlace */
-    border-bottom: 0.5px solid #060606; /* Línea abajo de cada enlace */
+    border-top: 2px solid #060606; /* Línea arriba de cada enlace */
+    border-bottom: 2px solid #060606; /* Línea abajo de cada enlace */
     padding: 10px; /* Ajusta el espacio alrededor del enlace */
 }
 .navbar-nav .nav-item:first-child .nav-link {

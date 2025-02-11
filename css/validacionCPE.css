@@ -62,3 +62,18 @@
         border: 2px solid black;
     }
   }
+
+  .boton-validador {
+    display: inline-block;
+    background-color: #007bff; /* Azul */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-validador:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}

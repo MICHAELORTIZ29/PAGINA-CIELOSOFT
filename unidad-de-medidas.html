@@ -108,7 +108,7 @@
                 <tr>
                     <th>Codigo Sunat</th>
                     <th>Descripción</th>
-                    <th>Simbolo comercial</th>
+                    <th>Simbolo comercial (editable)</th>
                 </tr>
             </thead>
             <tbody id="resultados"></tbody>  <!-- Asegúrate de que este elemento existe -->
@@ -237,123 +237,53 @@
         </tbody>
     </table>
 
+    <script src="js/unidades-de-medidas.js"></script>
+
     <script>
-        
         document.getElementById("input-busqueda").addEventListener("input", function() {
-    console.log("Ejecutando búsqueda", this.value);
-});
-    function buscarUnidad() {
-        let input = document.getElementById("search").value.toLowerCase();
-        let table = document.getElementById("search-results");
-        let tbody = document.getElementById("resultados");
-        
-        // Simulación de datos (reemplázalo con los datos reales)
-        let data = [
-        { codigo: "ZZ", descripcion: "Servicio", simbolo: "SERV" },
-    { codigo: "BX", descripcion: "Caja", simbolo: "CAJ" },
-    { codigo: "GLL", descripcion: "Galon", simbolo: "GL" },
-    { codigo: "GRM", descripcion: "Gramos", simbolo: "GR" },
-    { codigo: "KGM", descripcion: "Kilos", simbolo: "KG" },
-    { codigo: "LTR", descripcion: "Litro", simbolo: "LT" },
-    { codigo: "MTR", descripcion: "Metro", simbolo: "M" },
-    { codigo: "FOT", descripcion: "Pies", simbolo: "PIE" },
-    { codigo: "INH", descripcion: "Pulgadas", simbolo: "INCH" },
-    { codigo: "NIU", descripcion: "Unidad", simbolo: "UND" },
-    { codigo: "YRD", descripcion: "Yarda", simbolo: "YD" },
-    { codigo: "HUR", descripcion: "Hora", simbolo: "HR" },
-    { codigo: "TNE", descripcion: "Toneladas", simbolo: "TNL" },
-    { codigo: "DZN", descripcion: "Docena", simbolo: "DOC" },
-    { codigo: "QD", descripcion: "Cuarto de docena", simbolo: "1/4 DOC" },
-    { codigo: "PK", descripcion: "Paquete", simbolo: "PQT" },
-    { codigo: "MTQ", descripcion: "Metro cúbico", simbolo: "M3" },
-    { codigo: "HD", descripcion: "Media docena", simbolo: "1/2 DOC" },
-    { codigo: "PR", descripcion: "Par", simbolo: "PAR" },
-    { codigo: "JG", descripcion: "Jarra", simbolo: "JARR" },
-    { codigo: "JR", descripcion: "Frasco", simbolo: "FCO" },
-    { codigo: "KT", descripcion: "Kit", simbolo: "KIT" },
-    { codigo: "CH", descripcion: "Envase", simbolo: "ENV" },
-    { codigo: "AV", descripcion: "Capsula", simbolo: "CAPS" },
-    { codigo: "CT", descripcion: "Carton", simbolo: "CTON" },
-    { codigo: "CY", descripcion: "Cilindro", simbolo: "CIL" },
-    { codigo: "BE", descripcion: "Fardo", simbolo: "FARD" },
-    { codigo: "BG", descripcion: "Bolsa", simbolo: "BOLS" },
-    { codigo: "BJ", descripcion: "Balde", simbolo: "BALD" },
-    { codigo: "SET", descripcion: "Juego", simbolo: "JGO" },
-    { codigo: "BLL", descripcion: "Barril", simbolo: "BRL" },
-    { codigo: "RM", descripcion: "Resma", simbolo: "RESM" },
-    { codigo: "BO", descripcion: "Botellas", simbolo: "BOT" },
-    { codigo: "SA", descripcion: "Saco", simbolo: "SCO" },
-    { codigo: "BT", descripcion: "Tornillo", simbolo: "TORN" },
-    { codigo: "C62", descripcion: "Piezas", simbolo: "PZ" },
-    { codigo: "U2", descripcion: "Tableta o Blister", simbolo: "BLIST" },
-    { codigo: "CA", descripcion: "Latas", simbolo: "LT" },
-    { codigo: "CEN", descripcion: "Centenar o ciento", simbolo: "CTO" },
-    { codigo: "CMT", descripcion: "Centimetro", simbolo: "CM" },
-    { codigo: "CMK", descripcion: "Centimetro cuadrado", simbolo: "CM3" },
-    { codigo: "CMQ", descripcion: "Centimetro cubico", simbolo: "CM2" },
-    { codigo: "DZP", descripcion: "Docena de paquetes", simbolo: "DOC2" },
-    { codigo: "FTK", descripcion: "Pies cuadrados", simbolo: "PIE2" },
-    { codigo: "FTQ", descripcion: "Pies cubicos", simbolo: "PIE3" },
-    { codigo: "GLI", descripcion: "Galon ingles", simbolo: "GL" },
-    { codigo: "HT", descripcion: "Media hora", simbolo: "1/2 H" },
-    { codigo: "KTM", descripcion: "Kilometro", simbolo: "KM" },
-    { codigo: "KWH", descripcion: "Kilovatio hora", simbolo: "KWxH" },
-    { codigo: "MWH", descripcion: "Megavatio hora", simbolo: "MWxH" },
-    { codigo: "LBR", descripcion: "Libras", simbolo: "LB" },
-    { codigo: "LEF", descripcion: "Hoja", simbolo: "HOJA" },
-    { codigo: "MGM", descripcion: "Miligramos", simbolo: "MG" },
-    { codigo: "MIL", descripcion: "Millar", simbolo: "MIL" },
-    { codigo: "MLT", descripcion: "Mililitro", simbolo: "ML" },
-    { codigo: "MMT", descripcion: "Milimetro", simbolo: "ML" },
-    { codigo: "MMK", descripcion: "Milimetro cuadrado", simbolo: "ML2" },
-    { codigo: "MMQ", descripcion: "Milimetro cubico", simbolo: "ML3" },
-    { codigo: "MTK", descripcion: "Metro cuadrado", simbolo: "M2" },
-    { codigo: "ONZ", descripcion: "Onzas", simbolo: "ONZ" },
-    { codigo: "PF", descripcion: "Paletas", simbolo: "PAL" },
-    { codigo: "PG", descripcion: "Placas", simbolo: "PLAC" },
-    { codigo: "RD", descripcion: "Varilla", simbolo: "VAR" },
-    { codigo: "RL", descripcion: "Carrete", simbolo: "CRR" },
-    { codigo: "SEC", descripcion: "Segundo", simbolo: "SEG" },
-    { codigo: "ST", descripcion: "Pliego", simbolo: "PLGO" },
-    { codigo: "TU", descripcion: "Tubos", simbolo: "TB" },
-    { codigo: "UM", descripcion: "Millon", simbolo: "MILL" }
-        ];
-
-        // Filtrar los datos
-        let resultados = data.filter(item =>
-    item.codigo.toLowerCase().includes(input) || // Filtra por código
-    item.descripcion.toLowerCase().includes(input) || // Filtra por descripción
-    item.simbolo.toLowerCase().includes(input) // Filtra por símbolo
-);
-
-        // Limpiar tabla antes de insertar nuevos datos
-        tbody.innerHTML = "";
-
-        if (resultados.length > 0) {
-            resultados.forEach(item => {
-                let row = `<tr>
-                    <td>${item.codigo}</td>
-                    <td>${item.descripcion}</td>
-                    <td>${item.simbolo}</td>
-                </tr>`;
-                tbody.innerHTML += row;
-            });
-            table.style.display = "block"; // Mostrar la tabla si hay resultados
-        } else {
-            table.style.display = "none"; // Ocultar la tabla si no hay resultados
-            mostrarToast("No se encontraron resultados");
+            console.log("Ejecutando búsqueda", this.value);
+        });
+    
+        function buscarUnidad() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let table = document.getElementById("search-results");
+            let tbody = document.getElementById("resultados");
+    
+            // Filtrar los datos de unidades-de-medidas.js
+            let resultados = unidadesDeMedida.filter(item =>
+                item.codigo.toLowerCase().includes(input) || // Filtra por código
+                item.descripcion.toLowerCase().includes(input) || // Filtra por descripción
+                (item.simbolo && item.simbolo.toLowerCase().includes(input)) // Filtra por símbolo si existe
+            );
+    
+            // Limpiar tabla antes de insertar nuevos datos
+            tbody.innerHTML = "";
+    
+            if (resultados.length > 0) {
+                resultados.forEach(item => {
+                    let row = `<tr>
+                        <td>${item.codigo}</td>
+                        <td>${item.descripcion}</td>
+                        <td>${item.simbolo || " "}</td> <!-- Si no hay símbolo, mostrar "-" -->
+                    </tr>`;
+                    tbody.innerHTML += row;
+                });
+                table.style.display = "block"; // Mostrar la tabla si hay resultados
+            } else {
+                table.style.display = "none"; // Ocultar la tabla si no hay resultados
+                mostrarToast("No se encontraron resultados");
+            }
         }
-    }
-
-    function mostrarToast(mensaje) {
-        let toast = document.getElementById("toast");
-        toast.textContent = mensaje;
-        toast.classList.add("show");
-        setTimeout(() => {
-            toast.classList.remove("show");
-        }, 3000);
-    }
-</script>
+    
+        function mostrarToast(mensaje) {
+            let toast = document.getElementById("toast");
+            toast.textContent = mensaje;
+            toast.classList.add("show");
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 3000);
+        }
+    </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

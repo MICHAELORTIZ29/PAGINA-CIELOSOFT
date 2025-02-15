@@ -1,0 +1,190 @@
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    text-align: center; 
+    font-size: 16px; 
+}
+
+.search-container { 
+    margin-bottom: 20px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.search-container input { 
+    padding: 10px; 
+    width: 100%; 
+    max-width: 300px; 
+}
+
+.search-container button { 
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.catalog-title { 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.catalog-subtitle { 
+    font-size: 14px; 
+    color: gray; 
+    margin-bottom: 20px; 
+}
+
+.content { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+.left, .right { 
+    flex: 1; 
+    padding: 10px; 
+    /* border: 1px solid #ddd; 
+    border-radius: 5px;  */
+    text-align: left; 
+}
+
+@media (min-width: 1024px) {
+    .content { flex-wrap: nowrap; }
+    .left, .right { width: 50%; }
+}
+
+/* Estilos para los enlaces de descarga */
+.download-links { 
+    margin-top: 20px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+/* Contenedor para imagen y texto */
+.download-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Imágenes de descarga con mismo tamaño */
+.download-links img { 
+    width: 60px; 
+    height: 60px; 
+    object-fit: contain;
+    cursor: pointer; 
+}
+
+/* Texto debajo de la imagen */
+.download-links a span {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    font-size: 14px; 
+    table-layout: fixed; 
+    box-shadow: 10px 10px 30px rgba(0.5, 0.5, 0.5, 0.2); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el borde redondeado se aplique bien */
+}
+
+th, td { 
+    border: 1px solid #91cdef; 
+    padding: 10px; 
+    text-align: center; 
+    word-wrap: break-word; 
+}
+
+th { 
+    background-color: #a6daf8; 
+}
+#tabla-unidades {
+    font-size: 16px; /* Aumenta el tamaño del texto */
+}
+
+#tabla-unidades th, 
+#tabla-unidades td {
+    font-size: 16px; /* Asegura que todas las celdas tengan el mismo tamaño de texto */
+}
+
+@media (max-width: 768px) {
+    body { font-size: 14px; }
+    .catalog-title { font-size: 20px; }
+    .catalog-subtitle { font-size: 12px; }
+    .left, .right { font-size: 14px; width: 100%; }
+    table { font-size: 12px; }
+    th, td { padding: 8px; font-size: 10px; }
+    th { white-space: normal; }
+}
+#search-results {
+    display: none; /* Ocultar por defecto */
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Alinear verticalmente */
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#search-results table {
+    margin: auto; /* Asegura que la tabla se mantenga centrada */
+    border-collapse: collapse;
+    width: 60%;  /* Ajusta el ancho según prefieras */
+}
+
+#search-results th, #search-results td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.left ul {
+    padding-left: 0;  /* Elimina el espacio a la izquierda */
+    margin-left: 0;   /* Asegura que no haya margen extra */
+    list-style-position: inside; /* Opcional: Mueve los números/puntos dentro del contenedor */
+}
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    #search-results table {
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    }
+
+    #search-results th, #search-results td {
+        padding: 12px; /* Aumenta el espacio interno */
+        font-size: 0.8rem; /* Hace el texto un poco más grande */
+    }
+}

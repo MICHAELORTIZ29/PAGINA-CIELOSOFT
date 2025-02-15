@@ -15,160 +15,14 @@
 
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/css/index-carrusel-js.css">
-    <link rel="stylesheet" href="/css/Inicio3textos.css">
+    <link rel="stylesheet" href="/css/unidad-de-medidas.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="/css/btnWhatsappFlotante.css">
-    <link rel="stylesheet" href="/css/InicioModulos.css">
-    <link rel="stylesheet" href="/css/primeranuncio.css">
     <link rel="stylesheet" href="/css/InicioPlanes.css">
     <link rel="stylesheet" href="/css/Inicio-equipos.css">
-    <link rel="stylesheet" href="/css/index-carrusel-celular.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="/css/InicioVentajas.css">
-    <link rel="stylesheet" href="/css/index-metododepago1.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="/css/InicioCarruselInfinito-giros.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="/css/InicioTurial.css">
-    <link rel="stylesheet" href="/css/InicioCarruselInfinito-clientes.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
-    <style>
-        body { 
-    font-family: Arial, sans-serif; 
-    padding: 20px; 
-    text-align: center; 
-    font-size: 16px; 
-}
 
-.search-container { 
-    margin-bottom: 20px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px; 
-}
-
-.search-container input { 
-    padding: 10px; 
-    width: 100%; 
-    max-width: 300px; 
-}
-
-.search-container button { 
-    padding: 10px; 
-    cursor: pointer; 
-}
-
-.catalog-title { 
-    font-size: 24px; 
-    font-weight: bold; 
-}
-
-.catalog-subtitle { 
-    font-size: 14px; 
-    color: gray; 
-    margin-bottom: 20px; 
-}
-
-.content { 
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
-    margin-top: 20px; 
-}
-
-.left, .right { 
-    flex: 1; 
-    padding: 10px; 
-    /* border: 1px solid #ddd; 
-    border-radius: 5px;  */
-    text-align: left; 
-}
-
-@media (min-width: 1024px) {
-    .content { flex-wrap: nowrap; }
-    .left, .right { width: 50%; }
-}
-
-/* Estilos para los enlaces de descarga */
-.download-links { 
-    margin-top: 20px; 
-    display: flex; 
-    justify-content: center; 
-    gap: 20px; 
-}
-
-/* Contenedor para imagen y texto */
-.download-links a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
-
-/* Imágenes de descarga con mismo tamaño */
-.download-links img { 
-    width: 60px; 
-    height: 60px; 
-    object-fit: contain;
-    cursor: pointer; 
-}
-
-/* Texto debajo de la imagen */
-.download-links a span {
-    font-size: 14px;
-    color: #333;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-
-table { 
-    width: 100%; 
-    border-collapse: collapse; 
-    margin-top: 20px; 
-    font-size: 14px; 
-    table-layout: fixed; 
-    box-shadow: 10px 10px 30px rgba(0.5, 0.5, 0.5, 0.2); /* Sombra suave */
-    border-radius: 8px; /* Bordes redondeados */
-    overflow: hidden; /* Asegura que el borde redondeado se aplique bien */
-}
-
-th, td { 
-    border: 1px solid #91cdef; 
-    padding: 10px; 
-    text-align: center; 
-    word-wrap: break-word; 
-}
-
-th { 
-    background-color: #a6daf8; 
-}
-#tabla-unidades {
-    font-size: 16px; /* Aumenta el tamaño del texto */
-}
-
-#tabla-unidades th, 
-#tabla-unidades td {
-    font-size: 16px; /* Asegura que todas las celdas tengan el mismo tamaño de texto */
-}
-
-@media (max-width: 768px) {
-    body { font-size: 14px; }
-    .catalog-title { font-size: 20px; }
-    .catalog-subtitle { font-size: 12px; }
-    .left, .right { font-size: 14px; width: 100%; }
-    table { font-size: 12px; }
-    th, td { padding: 8px; font-size: 10px; }
-    th { white-space: normal; }
-}
-
-.left ul {
-    padding-left: 0;  /* Elimina el espacio a la izquierda */
-    margin-left: 0;   /* Asegura que no haya margen extra */
-    list-style-position: inside; /* Opcional: Mueve los números/puntos dentro del contenedor */
-}
-    </style>
 </head>
 
 </head>
@@ -241,11 +95,31 @@ th {
             </div>
         </nav>
     </header>
-
+    <div id="toast" class="toast"></div>
     <div class="search-container">
-        <input type="text" id="search" placeholder="Buscar unidad de medida...">
+
+        <input type="text" id="search" placeholder="Ejemplo: docena">
         <button onclick="buscarUnidad()">🔍 Buscar</button>
     </div>
+
+    <div id="search-results" >
+        <table id="tabla-resultados">
+            <thead>
+                <tr>
+                    <th>Codigo Sunat</th>
+                    <th>Descripción</th>
+                    <th>Simbolo comercial</th>
+                </tr>
+            </thead>
+            <tbody id="resultados"></tbody>  <!-- Asegúrate de que este elemento existe -->
+        </table>
+    </div>
+        
+    <div>
+        <br>
+        <br>
+    </div>
+    
 
     <div class="catalog-title"> <h3><b>Catálogo de Unidad de Medida para la Facturación Electrónica</b></h3></div>
     <div class="catalog-subtitle">Esto funciona para la SUNAT y para el OSE</div>
@@ -364,16 +238,122 @@ th {
     </table>
 
     <script>
-        function buscarUnidad() {
-            const searchValue = document.getElementById("search").value.toLowerCase();
-            const rows = document.querySelectorAll("#tabla-unidades tr");
-            
-            rows.forEach(row => {
-                const text = row.innerText.toLowerCase();
-                row.style.display = text.includes(searchValue) ? "" : "none";
+        
+        document.getElementById("input-busqueda").addEventListener("input", function() {
+    console.log("Ejecutando búsqueda", this.value);
+});
+    function buscarUnidad() {
+        let input = document.getElementById("search").value.toLowerCase();
+        let table = document.getElementById("search-results");
+        let tbody = document.getElementById("resultados");
+        
+        // Simulación de datos (reemplázalo con los datos reales)
+        let data = [
+        { codigo: "ZZ", descripcion: "Servicio", simbolo: "SERV" },
+    { codigo: "BX", descripcion: "Caja", simbolo: "CAJ" },
+    { codigo: "GLL", descripcion: "Galon", simbolo: "GL" },
+    { codigo: "GRM", descripcion: "Gramos", simbolo: "GR" },
+    { codigo: "KGM", descripcion: "Kilos", simbolo: "KG" },
+    { codigo: "LTR", descripcion: "Litro", simbolo: "LT" },
+    { codigo: "MTR", descripcion: "Metro", simbolo: "M" },
+    { codigo: "FOT", descripcion: "Pies", simbolo: "PIE" },
+    { codigo: "INH", descripcion: "Pulgadas", simbolo: "INCH" },
+    { codigo: "NIU", descripcion: "Unidad", simbolo: "UND" },
+    { codigo: "YRD", descripcion: "Yarda", simbolo: "YD" },
+    { codigo: "HUR", descripcion: "Hora", simbolo: "HR" },
+    { codigo: "TNE", descripcion: "Toneladas", simbolo: "TNL" },
+    { codigo: "DZN", descripcion: "Docena", simbolo: "DOC" },
+    { codigo: "QD", descripcion: "Cuarto de docena", simbolo: "1/4 DOC" },
+    { codigo: "PK", descripcion: "Paquete", simbolo: "PQT" },
+    { codigo: "MTQ", descripcion: "Metro cúbico", simbolo: "M3" },
+    { codigo: "HD", descripcion: "Media docena", simbolo: "1/2 DOC" },
+    { codigo: "PR", descripcion: "Par", simbolo: "PAR" },
+    { codigo: "JG", descripcion: "Jarra", simbolo: "JARR" },
+    { codigo: "JR", descripcion: "Frasco", simbolo: "FCO" },
+    { codigo: "KT", descripcion: "Kit", simbolo: "KIT" },
+    { codigo: "CH", descripcion: "Envase", simbolo: "ENV" },
+    { codigo: "AV", descripcion: "Capsula", simbolo: "CAPS" },
+    { codigo: "CT", descripcion: "Carton", simbolo: "CTON" },
+    { codigo: "CY", descripcion: "Cilindro", simbolo: "CIL" },
+    { codigo: "BE", descripcion: "Fardo", simbolo: "FARD" },
+    { codigo: "BG", descripcion: "Bolsa", simbolo: "BOLS" },
+    { codigo: "BJ", descripcion: "Balde", simbolo: "BALD" },
+    { codigo: "SET", descripcion: "Juego", simbolo: "JGO" },
+    { codigo: "BLL", descripcion: "Barril", simbolo: "BRL" },
+    { codigo: "RM", descripcion: "Resma", simbolo: "RESM" },
+    { codigo: "BO", descripcion: "Botellas", simbolo: "BOT" },
+    { codigo: "SA", descripcion: "Saco", simbolo: "SCO" },
+    { codigo: "BT", descripcion: "Tornillo", simbolo: "TORN" },
+    { codigo: "C62", descripcion: "Piezas", simbolo: "PZ" },
+    { codigo: "U2", descripcion: "Tableta o Blister", simbolo: "BLIST" },
+    { codigo: "CA", descripcion: "Latas", simbolo: "LT" },
+    { codigo: "CEN", descripcion: "Centenar o ciento", simbolo: "CTO" },
+    { codigo: "CMT", descripcion: "Centimetro", simbolo: "CM" },
+    { codigo: "CMK", descripcion: "Centimetro cuadrado", simbolo: "CM3" },
+    { codigo: "CMQ", descripcion: "Centimetro cubico", simbolo: "CM2" },
+    { codigo: "DZP", descripcion: "Docena de paquetes", simbolo: "DOC2" },
+    { codigo: "FTK", descripcion: "Pies cuadrados", simbolo: "PIE2" },
+    { codigo: "FTQ", descripcion: "Pies cubicos", simbolo: "PIE3" },
+    { codigo: "GLI", descripcion: "Galon ingles", simbolo: "GL" },
+    { codigo: "HT", descripcion: "Media hora", simbolo: "1/2 H" },
+    { codigo: "KTM", descripcion: "Kilometro", simbolo: "KM" },
+    { codigo: "KWH", descripcion: "Kilovatio hora", simbolo: "KWxH" },
+    { codigo: "MWH", descripcion: "Megavatio hora", simbolo: "MWxH" },
+    { codigo: "LBR", descripcion: "Libras", simbolo: "LB" },
+    { codigo: "LEF", descripcion: "Hoja", simbolo: "HOJA" },
+    { codigo: "MGM", descripcion: "Miligramos", simbolo: "MG" },
+    { codigo: "MIL", descripcion: "Millar", simbolo: "MIL" },
+    { codigo: "MLT", descripcion: "Mililitro", simbolo: "ML" },
+    { codigo: "MMT", descripcion: "Milimetro", simbolo: "ML" },
+    { codigo: "MMK", descripcion: "Milimetro cuadrado", simbolo: "ML2" },
+    { codigo: "MMQ", descripcion: "Milimetro cubico", simbolo: "ML3" },
+    { codigo: "MTK", descripcion: "Metro cuadrado", simbolo: "M2" },
+    { codigo: "ONZ", descripcion: "Onzas", simbolo: "ONZ" },
+    { codigo: "PF", descripcion: "Paletas", simbolo: "PAL" },
+    { codigo: "PG", descripcion: "Placas", simbolo: "PLAC" },
+    { codigo: "RD", descripcion: "Varilla", simbolo: "VAR" },
+    { codigo: "RL", descripcion: "Carrete", simbolo: "CRR" },
+    { codigo: "SEC", descripcion: "Segundo", simbolo: "SEG" },
+    { codigo: "ST", descripcion: "Pliego", simbolo: "PLGO" },
+    { codigo: "TU", descripcion: "Tubos", simbolo: "TB" },
+    { codigo: "UM", descripcion: "Millon", simbolo: "MILL" }
+        ];
+
+        // Filtrar los datos
+        let resultados = data.filter(item =>
+    item.codigo.toLowerCase().includes(input) || // Filtra por código
+    item.descripcion.toLowerCase().includes(input) || // Filtra por descripción
+    item.simbolo.toLowerCase().includes(input) // Filtra por símbolo
+);
+
+        // Limpiar tabla antes de insertar nuevos datos
+        tbody.innerHTML = "";
+
+        if (resultados.length > 0) {
+            resultados.forEach(item => {
+                let row = `<tr>
+                    <td>${item.codigo}</td>
+                    <td>${item.descripcion}</td>
+                    <td>${item.simbolo}</td>
+                </tr>`;
+                tbody.innerHTML += row;
             });
+            table.style.display = "block"; // Mostrar la tabla si hay resultados
+        } else {
+            table.style.display = "none"; // Ocultar la tabla si no hay resultados
+            mostrarToast("No se encontraron resultados");
         }
-    </script>
+    }
+
+    function mostrarToast(mensaje) {
+        let toast = document.getElementById("toast");
+        toast.textContent = mensaje;
+        toast.classList.add("show");
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 3000);
+    }
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

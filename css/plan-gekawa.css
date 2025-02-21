@@ -68,7 +68,7 @@
 }
 
 .rounded{
-    filter: drop-shadow(20px 20px 25px rgb(62, 62, 62));
+    filter: drop-shadow(10px 15px 10px rgb(62, 62, 62));
 }
 
 /* Estilos para el título del servicio */

@@ -1,5 +1,12 @@
+
+
+
+
+
+
+
 .section-plan{
-    padding: 1%;
+    padding: 0px;
 }
 /* Estilos personalizados para los contenedores de los servicios */
 .titulo-plan {
@@ -10,6 +17,29 @@
 
 
 }
+#ventajas {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#ventajas .container {
+  
+    padding: 0;
+}
+#ventajas .row {
+    margin-bottom: 0 !important;
+}
+
+#ventajas .col-md-6 {
+    margin-bottom: 0 !important;
+}
+
+#ventajas h3,
+#ventajas p {
+    margin-bottom: 0 !important;
+}
+
+
 .texto {
     width: 90%; /* Ajusta el ancho */
     margin: 0 auto; /* Centra horizontalmente */

@@ -1,3 +1,46 @@
+/* nuevo cambio a color gris sin lineas al header */
+.navbar-nav .nav-item .nav-link {
+    background-color: #e2e1e1; /* Color de fondo gris */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, font-size 0.3s ease; /* Transición suave */
+}
+
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item .nav-link:focus {
+    background-color: #b0b0b0; /* Color más oscuro al hacer hover o clic */
+    color: #010301; /* Mantener el color del texto */
+    font-size: 1.1em; /* Aumentar tamaño de fuente */
+}
+
+/* Opcional: quitar subrayado de los enlaces */
+.navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+}
+
+
+/* opcion para cambiar de color a los submenus */
+/* Estilos para las subopciones del menú desplegable */
+.dropdown-menu {
+    background-color: #f3f1f1; /* Color de fondo gris */
+    border-radius: 5px; /* Bordes redondeados */
+    border: none; /* Elimina el borde */
+}
+
+/* Estilos para los elementos dentro del dropdown */
+.dropdown-menu .dropdown-item {
+    color: #000; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Cambio de color al pasar el cursor */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #b0b0b0; /* Color más oscuro al hacer hover */
+    color: #fff; /* Cambiar el color del texto a blanco */
+}
+
 body {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
@@ -6,13 +49,13 @@ body {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 .navbar {
-    background-color: white!important;
+    background-color: #e2e1e1!important;
     z-index: 1000; 
    
 }
 .navbar-nav .nav-item .nav-link {
-    border-top: 2px solid #060606; /* Línea arriba de cada enlace */
-    border-bottom: 2px solid #060606; /* Línea abajo de cada enlace */
+    /* border-top: 2px solid #060606; 
+    border-bottom: 2px solid #060606; */
     padding: 10px; /* Ajusta el espacio alrededor del enlace */
 }
 .navbar-nav .nav-item:first-child .nav-link {

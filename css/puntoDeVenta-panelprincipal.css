@@ -1,0 +1,229 @@
+.section-title {
+    display: flex;
+    flex-direction: column; /* Muestra los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+}
+.section-title {
+    padding-bottom: 0px; /* Reduce el padding inferior si es muy grande */
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px; /* Agrega espacio debajo del título */
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+/* cuadros principal */
+
+/* Estilos del menú de categorías */
+/* Estilos generales del menú de categorías */
+.menu-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.buttons-container {
+    margin-top: 50px; /* Reduce el espacio encima de los botones */
+}
+
+/* Para pantallas pequeñas (máximo 768px) → 3 botones por fila */
+@media (max-width: 768px) {
+    .menu-categorias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 botones por fila */
+        gap: 10px;
+    }
+}
+
+/* Si el espacio es muy reducido, 2 botones por fila */
+@media (max-width: 480px) {
+    .menu-categorias {
+        grid-template-columns: repeat(2, 1fr); /* 2 botones por fila en pantallas muy pequeñas */
+    }
+}
+
+
+.filtro-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #20b4ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    min-width: 120px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.filtro-btn:hover, .filtro-btn.active {
+    background-color: #1a91c0;
+}
+
+/* Contenedor de productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Los alinea a la izquierda */
+    padding: 50px; /* Agrega un pequeño espacio */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Lo centra en la pantalla */
+}
+#productos {
+    padding: 40px 20px; /* Espaciado superior e inferior */
+}
+/* Diseño de cada producto */
+.producto {
+    background: #ede8e8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Hace que se acomoden de a tres productos en una fila */
+    max-width: 350px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+/* Aumentamos el tamaño de las imágenes */
+.producto img {
+    width: 100%;
+    max-height: 220px; /* Ahora es más grande */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Botón "Más detalles" */
+.detalle-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.detalle-btn:hover {
+    background-color: #cc5200;
+}
+.producto img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain; /* Muestra la imagen completa sin recortarla */
+    border-radius: 10px;
+   
+}
+@media (max-width: 768px) {
+    .productos-container {
+        justify-content: center; /* Centra los productos */
+        padding: 0; /* Elimina cualquier espacio extra */
+        width: 100%; /* Asegura que el contenedor use todo el ancho */
+    }
+
+    .producto {
+        width: 100% !important; /* Fuerza que el producto ocupe el 100% */
+        max-width: 100% !important; /* Asegura que no tenga límites */
+        margin: 0; /* Evita márgenes extra */
+    }
+}
+
+/* Hacerlo responsive */
+@media (max-width: 1024px) {
+    .producto {
+        width: calc(50% - 20px); /* En pantallas medianas, 2 productos por fila */
+    }
+}
+
+@media (max-width: 600px) {
+    .producto {
+        width: 100%; /* En pantallas pequeñas, 1 producto por fila */
+    }
+}
+
+/* Animación de aparición con escala */
+@keyframes aparecer {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Contenedor de productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Diseño de cada producto */
+.producto {
+    background: #ede8e8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    max-width: 350px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Ocultar productos antes de la animación */
+.ocultar {
+    display: none;
+}
+
+/* Clase para activar la animación */
+.mostrar {
+    display: block;
+    animation: aparecer 
+}

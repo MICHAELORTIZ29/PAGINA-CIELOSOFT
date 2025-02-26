@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: relative;
+    top: 50px; /* Baja la posición del header */
+    background-color: #ddd;
+    padding: 15px 20px; /* Reducción del padding general del header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    padding-left: 20px; /* Espacio solo para el texto del título */
+}
+.breadcrumb {
+    display: flex;
+    gap: 10px; /* Espaciado entre los elementos */
+    font-size: 14px;
+    padding-right: 20px; /* Espacio solo para los enlaces */
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+.breadcrumb a:hover {
+    color: #0056b3;
+}
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px; /* Ajuste del padding en móviles */
+    }
+    .breadcrumb {
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+}
+.content {
+margin-top: 80px; /* Ajusta este valor según la altura del header */
+padding: 20px;
+}
+/* -------------------------------------------------------------------------------------- */
+
+.slider-container {
+position: relative;
+width: 80%;
+max-width: 1000px;
+overflow: hidden;
+text-align: center;
+margin: auto;
+}
+.slider-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+@media (max-width: 768px) {
+    .slider-container {
+        width: 95%; /* Ajustamos el ancho sin que ocupe toda la pantalla */
+        max-width: 600px; /* Evita que se haga gigante */
+        height: auto; /* Mantiene proporciones */
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ajusta imagen sin deformarla */
+    }
+
+    /* Ajustar las flechas */
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.2); /* Más transparente */
+        color: white;
+        border: none;
+        padding: 5px 10px; /* Botón más pequeño */
+        font-size: 14px; /* Tamaño del icono */
+        border-radius: 50%;
+        transition: background 0.3s ease-in-out;
+        z-index: 10; /* Asegura que estén sobre la imagen */
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+/* Botones más pequeños y transparentes */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3); /* Más transparente */
+    color: white;
+    border: none;
+    padding: 5px 10px; /* Botón más pequeño */
+    cursor: pointer;
+    font-size: 18px; /* Tamaño del icono más pequeño */
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Efecto hover para las flechas */
+button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Ubicación de las flechas */
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Dots (puntos de navegación) */
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: blue;
+}
